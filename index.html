@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="/assets/logo/originalLogoHD.png">
-  <script src="/assets/js/accordionScript.js"></script>
   <!-- tailwindcss CDN Link -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- Flowbite CDN Link -->
@@ -171,6 +170,7 @@
       </div>
     </div>
   </section>
+
 
 <section class="bg-white max-md:px-5">
   <div class="w-full max-w-4xl mx-auto mt-5">
@@ -378,6 +378,30 @@
       }
     });
   </script>
+
+  <!-- Custom script for accordions -->
+  <script>
+  document.querySelectorAll(".accordion-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const id = btn.getAttribute("data-accordion");
+      const content = document.getElementById(`answer-${id}`);
+
+      // Close others
+      document.querySelectorAll(".accordion-content").forEach(el => {
+        if (el !== content) {
+          el.classList.remove("max-h-40", "pb-4");
+          el.classList.add("max-h-0");
+        }
+      });
+
+      // Toggle this one
+      content.classList.toggle("max-h-0");
+      content.classList.toggle("max-h-40");
+      content.classList.toggle("pb-4");
+    });
+  });
+</script>
+
 </body>
 
 </html>
