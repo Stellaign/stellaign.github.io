@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="/assets/logo/originalLogoHD.png">
+  <script src="/assets/js/accordionScript.js"></script>
   <!-- tailwindcss CDN Link -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- Flowbite CDN Link -->
@@ -171,69 +172,68 @@
     </div>
   </section>
 
-  <section class="bg-white">
-    <div class="w-full max-w-4xl mx-auto mt-5">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800 text-center">Our Expertise</h2>
+<section class="bg-white max-md:px-5">
+  <div class="w-full max-w-4xl mx-auto mt-5">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800 text-center">Our Expertise</h2>
 
-      <!-- Accordion Item -->
-      <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
-        <button class="w-full flex justify-between items-center py-4 text-left pointer-events-none">
-          <span class="text-base text-center md:text-lg font-medium text-gray-800">AI Integration and Data
-            Analytics</span>
-        </button>
-        <div
-          class="max-h-0 overflow-hidden transition-all duration-1000 ease-in-out group-hover:max-h-40 group-hover:pb-4 text-gray-600 text-sm md:text-base">
-          We provide web development, mobile app development, SEO services, custom software solutions, and MVP
-          development.
-        </div>
-      </div>
-
-      <!-- Accordion Item -->
-      <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
-        <button class="w-full flex justify-between items-center py-4 text-left pointer-events-none">
-          <span class="text-base md:text-lg font-medium text-gray-800">Application Development</span>
-        </button>
-        <div
-          class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-40 group-hover:pb-4 text-gray-600 text-sm md:text-base">
-          Yes, we work with clients across the globe, offering flexible solutions tailored to different regions and
-          industries.
-        </div>
-      </div>
-
-      <!-- Accordion Item -->
-      <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
-        <button class="w-full flex justify-between items-center py-4 text-left pointer-events-none">
-          <span class="text-base md:text-lg font-medium text-gray-800">IOT Development and Integration</span>
-        </button>
-        <div
-          class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-40 group-hover:pb-4 text-gray-600 text-sm md:text-base">
-          You can reach out to us via our contact page, and our team will get back to you with a tailored proposal.
-        </div>
-      </div>
-
-      <!-- Accordion Item -->
-      <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
-        <button class="w-full flex justify-between items-center py-4 text-left pointer-events-none">
-          <span class="text-base md:text-lg font-medium text-gray-800">Application Modernization</span>
-        </button>
-        <div
-          class="max-h-0 overflow-hidden transition-all duration-1500 ease-in-out group-hover:max-h-40 group-hover:pb-4 text-gray-600 text-sm md:text-base">
-          You can reach out to us via our contact page, and our team will get back to you with a tailored proposal.
-        </div>
-      </div>
-
-      <!-- Accordion Item -->
-      <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
-        <button class="w-full flex justify-between items-center py-4 text-left pointer-events-none">
-          <span class="text-base md:text-lg font-medium text-gray-800">Business Automations</span>
-        </button>
-        <div
-          class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-40 group-hover:pb-4 text-gray-600 text-sm md:text-base">
-          You can reach out to us via our contact page, and our team will get back to you with a tailored proposal.
-        </div>
+    <!-- Accordion Item -->
+    <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
+      <button data-accordion="1" class="accordion-btn w-full flex justify-between items-center py-4 text-left">
+        <span class="text-base md:text-lg font-medium text-gray-800">AI Integration and Data Analytics</span>
+      </button>
+      <div id="answer-1"
+        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:group-hover:max-h-40 md:group-hover:pb-4 text-gray-600 text-sm md:text-base">
+        We provide web development, mobile app development, SEO services, custom software solutions, and MVP
+        development.
       </div>
     </div>
-  </section>
+
+    <!-- Accordion Item -->
+    <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
+      <button data-accordion="2" class="accordion-btn w-full flex justify-between items-center py-4 text-left">
+        <span class="text-base md:text-lg font-medium text-gray-800">Application Development</span>
+      </button>
+      <div id="answer-2"
+        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:group-hover:max-h-40 md:group-hover:pb-4 text-gray-600 text-sm md:text-base">
+        Yes, we work with clients across the globe, offering flexible solutions tailored to different regions and
+        industries.
+      </div>
+    </div>
+
+    <!-- Accordion Item -->
+    <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
+      <button data-accordion="3" class="accordion-btn w-full flex justify-between items-center py-4 text-left">
+        <span class="text-base md:text-lg font-medium text-gray-800">IoT Development and Integration</span>
+      </button>
+      <div id="answer-3"
+        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:group-hover:max-h-40 md:group-hover:pb-4 text-gray-600 text-sm md:text-base">
+        You can reach out to us via our contact page, and our team will get back to you with a tailored proposal.
+      </div>
+    </div>
+
+    <!-- Accordion Item -->
+    <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
+      <button data-accordion="4" class="accordion-btn w-full flex justify-between items-center py-4 text-left">
+        <span class="text-base md:text-lg font-medium text-gray-800">Application Modernization</span>
+      </button>
+      <div id="answer-4"
+        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:group-hover:max-h-40 md:group-hover:pb-4 text-gray-600 text-sm md:text-base">
+        You can reach out to us via our contact page, and our team will get back to you with a tailored proposal.
+      </div>
+    </div>
+
+    <!-- Accordion Item -->
+    <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
+      <button data-accordion="5" class="accordion-btn w-full flex justify-between items-center py-4 text-left">
+        <span class="text-base md:text-lg font-medium text-gray-800">Business Automations</span>
+      </button>
+      <div id="answer-5"
+        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:group-hover:max-h-40 md:group-hover:pb-4 text-gray-600 text-sm md:text-base">
+        You can reach out to us via our contact page, and our team will get back to you with a tailored proposal.
+      </div>
+    </div>
+  </div>
+</section>
 
 
   <section class="bg-gray-50 py-12">
@@ -357,11 +357,6 @@
   </footer>
 
 
-
-
-
-
-
   <!-- Flowbite JS -->
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
@@ -382,19 +377,6 @@
         servicesMenu.classList.add("hidden");
       }
     });
-  </script>
-  <script>
-    function toggleAccordion(id) {
-      const answer = document.getElementById(`answer-${id}`);
-
-      // Close all other accordions
-      document.querySelectorAll('[id^="answer-"]').forEach(el => {
-        if (el.id !== `answer-${id}`) el.classList.add("hidden");
-      });
-
-      // Toggle current one
-      answer.classList.toggle("hidden");
-    }
   </script>
 </body>
 
