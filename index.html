@@ -4,11 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="/assets/logo/favicon.png">
-  <!-- tailwindcss CDN Link -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-  <!-- Flowbite CDN Link -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
-  <!-- Custom CSS Link -->
   <script src="assets/js/script.js"></script>
   <link href="./assets/css/stylesheet.css" rel="stylesheet">
   <title>Home</title>
@@ -185,13 +180,14 @@
     </div>
   </nav> -->
 
-<!-- Full-Screen Under Development Modal -->
+  <!-- Full-Screen Under Development Modal -->
   <div id="underDevelopmentModal" class="fixed inset-0 bg-brand-primary-6 flex items-center justify-center z-50">
-    <div class="bg-white text-center rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-150 p-8 max-w-md w-11/12 sm:w-96">
+    <div
+      class="bg-white text-center rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-150 p-8 max-w-md w-11/12 sm:w-96">
       <h2 class="text-2xl font-bold text-gray-900 mb-3">🚧 Website Under Development</h2>
-      <p class="text-gray-700 mb-6">We’re currently working hard to bring you something amazing. Please check back soon.</p>
-      <!-- Optional Close Button (remove this if you don’t want users to close the modal) -->
-      <button id="closeModal" class="px-5 py-2 bg-brand-primary text-white rounded-lg hover:bg-brand-primary-18 transition-colors duration-200">
+      <p class="text-gray-700 mb-6">We’re currently working hard to bring something amazing. Please check back soon.</p>
+      <button id="closeModal"
+        class="px-5 py-2 bg-brand-primary text-white rounded-lg hover:bg-brand-primary-18 transition-colors duration-200">
         Okay, Got it
       </button>
     </div>
@@ -199,8 +195,7 @@
 
   <script>
     document.body.style.overflow = 'hidden';
-    
-    // Close the tab when user clicks the button
+
     document.getElementById('closeModal').addEventListener('click', () => {
       // Attempt to close the tab
       window.open('', '_self');
@@ -431,7 +426,10 @@
           </div>
           <div class="menu-data hidden flex flex-col justify-between h-full">
             <h1 class="text-3xl text-slate-900">Streamline your operations with our Business Automation services.</h1>
-            <p class="text-base text-slate-800">We design intelligent workflows that eliminate manual tasks, minimize errors, and boost productivity across your organization. By integrating smart automation tools and AI-driven systems, we help you achieve operational efficiency, reduce costs, and allow your team to focus on innovation and growth.</p>
+            <p class="text-base text-slate-800">We design intelligent workflows that eliminate manual tasks, minimize
+              errors, and boost productivity across your organization. By integrating smart automation tools and
+              AI-driven systems, we help you achieve operational efficiency, reduce costs, and allow your team to focus
+              on innovation and growth.</p>
             <div class="flex justify-end">
               <button id="updateProductButton" data-modal-target="updateProductModal"
                 data-modal-toggle="updateProductModal"
@@ -474,7 +472,7 @@
           <div class="flex flex-col gap-4 mb-4">
             <div>
               <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Name</label>
-              <input type="text" name="name" id="name" 
+              <input type="text" name="name" id="name"
                 class="bg-brand-primary-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:border-brand-primary focus:border-2 block w-full p-2.5"
                 placeholder="John Doe">
             </div>
@@ -747,14 +745,14 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script> -->
   <script src="assets/js/flowbite.min.js"></script>
 
-  
+
   <!-- Custom script for accordions -->
   <script>
     document.querySelectorAll(".accordion-btn").forEach(btn => {
       btn.addEventListener("click", () => {
         const id = btn.getAttribute("data-accordion");
         const content = document.getElementById(`answer-${id}`);
-        
+
         // Close others
         document.querySelectorAll(".accordion-content").forEach(el => {
           if (el !== content) {
@@ -762,7 +760,7 @@
             el.classList.add("max-h-0");
           }
         });
-        
+
         // Toggle this one
         content.classList.toggle("max-h-0");
         content.classList.toggle("max-h-40");
@@ -770,13 +768,13 @@
       });
     });
   </script>
-  
-  
+
+
   <!-- Custom Script for footer Popover -->
   <script>
     const button = document.getElementById("popoverButton");
     const popover = document.getElementById("popoverContent");
-    
+
     // Hover for desktop
     button.addEventListener("mouseenter", () => {
       if (window.innerWidth >= 768) showPopover();
@@ -790,7 +788,7 @@
     popover.addEventListener("mouseleave", () => {
       if (window.innerWidth >= 768) hidePopover();
     });
-    
+
     // Click toggle for mobile
     button.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -802,25 +800,25 @@
         }
       }
     });
-    
+
     // Hide when clicking outside (mobile)
     document.addEventListener("click", (e) => {
       if (!button.contains(e.target) && !popover.contains(e.target)) {
         hidePopover();
       }
     });
-    
+
     function showPopover() {
       popover.classList.remove("opacity-0", "pointer-events-none");
       popover.classList.add("opacity-100");
     }
-    
+
     function hidePopover() {
       popover.classList.add("opacity-0", "pointer-events-none");
       popover.classList.remove("opacity-100");
     }
   </script>
-  
+
   <!-- Custom Script for Closing on Outside Click -->
   <!-- <script>
     const servicesBtn = document.getElementById("services-btn");
