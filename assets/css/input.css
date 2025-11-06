@@ -1,2 +1,64 @@
 @import "tailwindcss";
 
+@theme {
+    --color-brand-primary: #303fa4;
+    --color-brand-primary-1: #f7f8fd;
+    --color-brand-primary-2: #e7e9f8;
+    --color-brand-primary-3: #d8dbf3;
+    --color-brand-primary-4: #d8dbf3;
+    --color-brand-primary-5: #b8beea;
+    --color-brand-primary-6: #a8b0e6;
+    --color-brand-primary-7: #98a2e1;
+    --color-brand-primary-8: #8993dc;
+    --color-brand-primary-9: #7985d8;
+    --color-brand-primary-10: #6977d3;
+    --color-brand-primary-11: #5968ce;
+    --color-brand-primary-12: #4a5aca;
+    --color-brand-primary-13: #3a4cc5;
+    --color-brand-primary-14: #3546b5;
+    --color-brand-primary-15: #3140a6;
+    --color-brand-primary-16: #2c3a96;
+    --color-brand-primary-17: #273486;
+    --color-brand-primary-18: #232d76;
+    --color-brand-primary-19: #1e2767;
+    --color-brand-primary-20: #192157;
+    --color-brand-primary-21: #151b47;
+    --color-brand-primary-22: #101537;
+    --color-brand-primary-23: #0c0f27;
+    --color-brand-primary-24: #070918;
+    --color-brand-primary-25: #020308;
+
+    --color-brand-secondary: #ffc407;
+    --color-brand-secondary-1: #fffdf5;
+    --color-brand-secondary-2: #fff8e0;
+    --color-brand-secondary-3: #fff3cc;
+    --color-brand-secondary-4: #ffeeb8;
+    --color-brand-secondary-5: #ffe9a3;
+    --color-brand-secondary-6: #ffe48f;
+    --color-brand-secondary-7: #ffdf7a;
+    --color-brand-secondary-8: #ffdb66;
+    --color-brand-secondary-9: #ffd652;
+    --color-brand-secondary-10: #ffd13d;
+    --color-brand-secondary-11: #ffcc29;
+    --color-brand-secondary-12: #ffc714;
+    --color-brand-secondary-13: #ffc200;
+    --color-brand-secondary-14: #ebb300;
+    --color-brand-secondary-15: #d6a300;
+    --color-brand-secondary-16: #c29400;
+    --color-brand-secondary-17: #ad8400;
+    --color-brand-secondary-18: #997500;
+    --color-brand-secondary-19: #856500;
+    --color-brand-secondary-20: #705600;
+    --color-brand-secondary-21: #5c4600;
+    --color-brand-secondary-22: #473600;
+    --color-brand-secondary-23: #332700;
+    --color-brand-secondary-24: #1f1700;
+    --color-brand-secondary-25: #0a0800;
+    
+    /* socials */
+    --color-face-primary: #0866ff;
+    --color-tube-primary: #ff0033;
+    --color-linked-primary: #0a66c2;
+    --color-x-primary: #010b13;
+}
+
