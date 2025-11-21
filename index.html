@@ -4,188 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="/assets/logo/favicon.png">
-  <!-- tailwindcss CDN Link -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-  <!-- Flowbite CDN Link -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
-  <!-- Custom CSS Link -->
+    <!-- Flowbite JS -->
+  <script src="assets/js/flowbite.min.js" defer></script>
+  <script src="assets/js/indScript.js"></script>
   <script src="assets/js/script.js"></script>
   <link href="./assets/css/stylesheet.css" rel="stylesheet">
   <title>Home</title>
 </head>
 
 <body>
-  <!-- <nav class="bg-brand-primary-1 border-gray-600 shadow-lg">
-    <div class="hidden md:flex flex-wrap justify-between items-center mx-auto max-w-screen-2xl p-4 px-4">
-      <a href="https://stellaign.com" class="flex items-center space-x-2 rtl:space-x-reverse">
-        <img src="./assets/logo/originalLogoHD.png" class="h-9" alt="Stellaign Logo" />
-        <span class="self-center text-3xl font-semibold whitespace-nowrap">Stellaign</span>
-      </a>
-
-      <a href="mailto:connect@stellaign.com" class="hover:underline hover:text-[] text-lg">connect@stellaign.com</a>
-
-      <div class="flex space-x-1.5 justify-end-safe sm:mt-0">
-        <a href="https://www.youtube.com/@placeholder" target="_blank" class="text-gray-500 hover:text-tube-primary">
-          <svg class="w-5.5 h-5.5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="-143 145 512 512"
-            aria-hidden="true">
-            <g stroke-width="0" />
-            <g stroke-linecap="round" stroke-linejoin="round" />
-            <g>
-              <g>
-                <polygon points="78.9,450.3 162.7,401.1 78.9,351.9 " />
-                <path
-                  d="M-143,145v512h512V145H-143z M241,446.8L241,446.8c0,44.1-44.1,44.1-44.1,44.1H29.1c-44.1,0-44.1-44.1-44.1-44.1v-91.5 c0-44.1,44.1-44.1,44.1-44.1h167.8c44.1,0,44.1,44.1,44.1,44.1V446.8z" />
-              </g>
-            </g>
-          </svg>
-        </a>
-        <a href="https://in.linkedin.com/company/stellaign" target="_blank"
-          class="text-gray-500 hover:text-linked-primary">
-          <svg class="w-5.5 h-5.5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="-143 145 512 512"
-            aria-hidden="true">
-            <g id="SVGRepo_bgCarrier" stroke-width="0" />
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M-143,145v512h512V145H-143z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7 c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6 c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1 c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z" />
-            </g>
-          </svg>
-        </a>
-        <a href="#" class="text-gray-500 hover:text-x-primary">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 1.5 18 18" aria-hidden="true">
-            <path
-              d="M15.9 1.7v15.8H0V1.7h15.8zM8.8 8.8 12.1 5h-.8L8.5 8.3 6.2 5H3.6L7 10l-3.4 4h.8l3-3.5L9.8 14h2.6zm-1 1.2-.3-.5-2.8-4h1.2l2.2 3.2.3.5 2.9 4.2h-1.2L7.7 10z" />
-          </svg>
-        </a>
-        <a href="#" class="text-gray-500 hover:text-face-primary">
-          <svg class="w-5.5 h-5.5 ml-[-3px]" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-            viewBox="-143 145 512 512" aria-hidden="true">
-            <g id="SVGRepo_bgCarrier" stroke-width="0" />
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M-143,145v512h512V145H-143z M169.5,357.6l-2.9,38.3h-39.3v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7 c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z" />
-            </g>
-          </svg>
-        </a>
-      </div>
-
-    </div>
-    <div class="flex flex-wrap justify-between bg-brand-primary-2 items-center mx-auto p-4 px-4">
-      <a href="https://stellaign.com" class="flex items-center space-x-2 rtl:space-x-reverse md:hidden">
-        <img src="./assets/logo/originalLogoHD.png" class="h-9" alt="Stellaign Logo" />
-        <span class="self-center text-3xl font-semibold whitespace-nowrap">Stellaign</span>
-      </a>
-      <button data-collapse-toggle="mega-menu-full" type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-brand-primary-8 rounded-lg md:hidden hover:bg-brand-primary-1 focus:outline-none focus:ring-2 focus:ring-brand-primary-3"
-        aria-controls="mega-menu-full" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15" />
-        </svg>
-      </button>
-      <div id="mega-menu-full"
-        class="items-center justify-between font-medium hidden m-auto w-full md:flex md:w-auto md:order-1">
-        <ul
-          class="flex flex-col p-4 md:p-0 mt-4 border-2 border-brand-primary-3 rounded-lg bg-brand-primary-2 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-brand-primary-2">
-          <li>
-            <a href="./"
-              class="block py-1 px-3 text-gray-900 rounded-sm hover:bg-brand-primary-1 md:hover:bg-transparent md:hover:text-brand-primary md:p-0"
-              aria-current="page">Home</a>
-          </li>
-          <li>
-            <button id="services-btn" data-collapse-toggle="services-menu"
-              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm md:w-auto hover:bg-brand-primary-1 md:hover:bg-transparent md:border-0 md:hover:text-brand-primary md:p-0">Services
-              We Provide
-              <svg class="w-2.5 h-2.5 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m1 1 4 4 4-4" />
-              </svg></button>
-          </li>
-          <li class="hidden">
-            <a href="#"
-              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-brand-primary-1 md:hover:bg-transparent md:hover:text-brand-primary md:p-0">Our
-              Products</a>
-          </li>
-          <li>
-            <a href="./about-us.html"
-              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-brand-primary-1 md:hover:bg-transparent md:hover:text-brand-primary md:p-0">About
-              Us</a>
-          </li>
-          <li>
-            <a href="/contact-us.html"
-              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-brand-primary-1 md:hover:bg-transparent md:hover:text-brand-primary md:p-0">Contact
-              Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div id="services-menu"
-      class="hidden absolute max-md:w-full justify-self-center-safe mt-1 rounded-xl border-2 border-brand-primary-2 bg-brand-primary-1 md:bg-brand-primary-1 shadow-lg">
-      <div class="grid md:grid-cols-2 max-w-4xl px-4 py-3 mx-2 md:mx-auto text-gray-900 md:px-3">
-        <ul class="gird">
-          <li>
-            <div>
-              <button type="button" class="menu-item block w-full p-3 rounded-lg hover:bg-brand-primary-2">
-                <div class="font-semibold text-left">AI Integration and Data Analytics</div>
-                <span class="block text-sm text-left text-gray-500">Helping you use smart automation and data to make
-                  better decisions and work more efficiently.</span>
-              </button>
-            </div>
-          </li>
-          <li>
-            <button type="button" id="ser-menu-2" class="menu-item block w-full p-3 rounded-lg hover:bg-brand-primary-2">
-              <div class="font-semibold text-left">Application Development</div>
-              <span class="block text-sm text-left text-gray-500">Building fast, reliable apps for your business that
-                give users a great experience on any device.</span>
-            </button>
-          </li>
-          <li>
-            <button type="button" id="ser-menu-3" class="menu-item block w-full p-3 rounded-lg hover:bg-brand-primary-2">
-              <div class="font-semibold text-left">IOT Development and Integration</div>
-              <span class="block text-sm text-left text-gray-500">Connecting your devices and data streams, which
-                helps you make smarter decisions in real-time.</span>
-            </button>
-          </li>
-          <li>
-            <button type="button" id="ser-menu-4" class="menu-item block w-full p-3 rounded-lg hover:bg-brand-primary-2">
-              <div class="font-semibold text-left">Application Mordernization</div>
-              <span class="block text-sm text-left text-gray-500">Modernizing your old systems to make them fast,
-                flexible, and ready for today's business needs.</span>
-            </button>
-          </li>
-          <li>
-            <button type="button" id="ser-menu-5" class="menu-item block w-full p-3 rounded-lg hover:bg-brand-primary-2">
-              <div class="font-semibold text-left">Business Automations</div>
-              <span class="block text-sm text-left text-gray-500">Simplifying your daily work with smart automation
-                to cut down on manual tasks and grow your business.</span>
-            </button>
-          </li>
-        </ul>
-
-        <div id="menu-data" class="hidden md:flex md:flex-col bg-brand-primary-2 h-full rounded-xl my-auto ml-3 p-3">
-          <h1 class="text-3xl text-gray-900 pb-5">Enhance your business performance with our AI Integration and Data
-            Analytics services.</h1>
-          <p class="text-base text-gray-800 pb-5">We help you transform data into actionable insights, automate
-            workflows, and make smarter, faster
-            decisions. From predicting market trends to improving customer experiences, our AI-driven solutions empower
-            your business to operate efficiently and grow intelligently.</p>
-          <div class="flex justify-end">
-            <button id="updateProductButton" data-modal-target="updateProductModal"
-              data-modal-toggle="updateProductModal"
-              class="block text-white bg-brand-primary hover:bg-brand-primary-20 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center"
-              type="button">
-              Get in Touch
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav> -->
-
-  <nav class="bg-brand-primary-1 border-gray-600 shadow-lg">
+  <nav class="relative z-30 bg-brand-primary-1 border-gray-600 shadow-lg">
     <div class="hidden md:flex flex-wrap justify-between items-center mx-auto max-w-screen-2xl p-4 px-4">
       <a href="https://stellaign.com" class="flex items-center space-x-2 rtl:space-x-reverse">
         <img src="./assets/logo/originalLogoHD.png" class="h-9" alt="Stellaign Logo" />
@@ -242,7 +70,7 @@
 
     </div>
 
-    <div class="flex flex-wrap justify-between bg-brand-primary-2 items-center mx-auto p-4 px-4">
+    <div class="flex flex-wrap justify-between z-30 bg-brand-primary-2 items-center mx-auto p-4 px-4">
       <a href="https://stellaign.com" class="flex items-center space-x-2 rtl:space-x-reverse md:hidden">
         <img src="./assets/logo/originalLogoHD.png" class="h-9" alt="Stellaign Logo" />
         <span class="self-center text-3xl font-semibold whitespace-nowrap">Stellaign</span>
@@ -261,7 +89,7 @@
         <ul
           class="flex flex-col p-4 md:p-0 mt-4 border-2 border-brand-primary-3 rounded-lg bg-brand-primary-2 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-brand-primary-2">
           <li>
-            <a href="./"
+            <a href="./" id="home-anchor"
               class="block py-1 px-3 text-gray-900 rounded-sm hover:bg-brand-primary-1 md:hover:bg-transparent md:hover:text-brand-primary md:p-0"
               aria-current="page">Home</a>
           </li>
@@ -276,26 +104,27 @@
               </svg></button>
           </li>
           <li class="hidden">
-            <a href="#"
+            <a href="#" id="products-anchor"
               class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-brand-primary-1 md:hover:bg-transparent md:hover:text-brand-primary md:p-0">Our
               Products</a>
           </li>
           <li>
-            <a href="./about-us.html"
+            <a href="./about-us.html" id="about-anchor"
               class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-brand-primary-1 md:hover:bg-transparent md:hover:text-brand-primary md:p-0">About
               Us</a>
           </li>
           <li>
-            <a href="/contact-us.html"
+            <a href="/contact-us.html" id="contact-anchor"
               class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-brand-primary-1 md:hover:bg-transparent md:hover:text-brand-primary md:p-0">Contact
               Us</a>
           </li>
         </ul>
       </div>
     </div>
+
     <div id="services-menu"
-      class="hidden absolute max-md:w-full justify-self-center-safe mt-1 rounded-xl border-2 border-brand-primary-2 bg-brand-primary-1 md:bg-brand-primary-1 shadow-lg">
-      <div class="grid md:grid-cols-2 max-w-4xl px-4 py-3 mx-2 md:mx-auto text-gray-900 md:px-3">
+      class="hidden absolute z-30 justify-self-center-safe mt-1 my-2 rounded-xl border-2 border-brand-primary-2 bg-brand-primary-1 md:bg-brand-primary-1 shadow-lg">
+      <div class="grid md:grid-cols-2 max-w-4xl px-4 py-3 md:mx-auto text-gray-900 md:px-3">
         <ul class="grid">
           <li>
             <div>
@@ -346,8 +175,7 @@
               empower
               your business to operate efficiently and grow intelligently.</p>
             <div class="flex justify-end">
-              <button id="updateProductButton" data-modal-target="updateProductModal"
-                data-modal-toggle="updateProductModal"
+              <button id="contactUsButton" data-modal-target="contactUsModal" data-modal-toggle="contactUsModal"
                 class="block text-white bg-brand-primary hover:bg-brand-primary-18 transition-colors duration-200 rounded-xl text-sm px-5 py-2.5 text-center"
                 type="button">
                 Get in Touch
@@ -362,8 +190,7 @@
               to deployment, our expert team ensures seamless functionality, intuitive design, and reliable performance
               — empowering your business to deliver exceptional digital experiences and drive growth.</p>
             <div class="flex justify-end">
-              <button id="updateProductButton" data-modal-target="updateProductModal"
-                data-modal-toggle="updateProductModal"
+              <button id="contactUsButton" data-modal-target="contactUsModal" data-modal-toggle="contactUsModal"
                 class="block bg-brand-primary hover:bg-brand-primary-18 transition-colors duration-200 text-white rounded-xl text-sm px-5 py-2.5 text-center"
                 type="button">
                 Get in Touch
@@ -379,8 +206,7 @@
               cloud connectivity, we ensure your infrastructure is intelligent, data-driven, and ready for the future.
             </p>
             <div class="flex justify-end">
-              <button id="updateProductButton" data-modal-target="updateProductModal"
-                data-modal-toggle="updateProductModal"
+              <button id="contactUsButton" data-modal-target="contactUsModal" data-modal-toggle="contactUsModal"
                 class="block bg-brand-primary hover:bg-brand-primary-18 transition-colors duration-200 text-white rounded-xl text-sm px-5 py-2.5 text-center"
                 type="button">
                 Get in Touch
@@ -395,8 +221,7 @@
               and cloud infrastructure, we help you enhance performance, reduce maintenance costs, and stay competitive
               in a rapidly evolving digital landscape.</p>
             <div class="flex justify-end">
-              <button id="updateProductButton" data-modal-target="updateProductModal"
-                data-modal-toggle="updateProductModal"
+              <button id="contactUsButton" data-modal-target="contactUsModal" data-modal-toggle="contactUsModal"
                 class="block text-white bg-brand-primary hover:bg-brand-primary-18 transition-colors duration-200 rounded-xl text-sm px-5 py-2.5 text-center"
                 type="button">
                 Get in Touch
@@ -405,10 +230,12 @@
           </div>
           <div class="menu-data hidden flex flex-col justify-between h-full">
             <h1 class="text-3xl text-slate-900">Streamline your operations with our Business Automation services.</h1>
-            <p class="text-base text-slate-800">We design intelligent workflows that eliminate manual tasks, minimize errors, and boost productivity across your organization. By integrating smart automation tools and AI-driven systems, we help you achieve operational efficiency, reduce costs, and allow your team to focus on innovation and growth.</p>
+            <p class="text-base text-slate-800">We design intelligent workflows that eliminate manual tasks, minimize
+              errors, and boost productivity across your organization. By integrating smart automation tools and
+              AI-driven systems, we help you achieve operational efficiency, reduce costs, and allow your team to focus
+              on innovation and growth.</p>
             <div class="flex justify-end">
-              <button id="updateProductButton" data-modal-target="updateProductModal"
-                data-modal-toggle="updateProductModal"
+              <button id="contactUsButton" data-modal-target="contactUsModal" data-modal-toggle="contactUsModal"
                 class="block bg-brand-primary hover:bg-brand-primary-18 transition-colors duration-200 text-white rounded-xl text-sm px-5 py-2.5 text-center"
                 type="button">
                 Get in Touch
@@ -420,10 +247,10 @@
     </div>
   </nav>
 
-  <!-- Main modal -->
-  <div id="updateProductModal" tabindex="-1" aria-hidden="true"
+  <!-- Contact Us modal -->
+  <div id="contactUsModal" tabindex="-1" aria-hidden="true"
     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full">
-    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+    <div class="relative w-full max-w-2xl max-h-[calc(100dvh-3.5rem)] overflow-y-auto p-4">
       <!-- Modal content -->
       <div class="relative p-4 bg-brand-primary-1 rounded-lg shadow sm:p-5">
         <!-- Modal header -->
@@ -432,8 +259,8 @@
             Get in Touch with us
           </h3>
           <button type="button"
-            class="text-slate-800 bg-transparent hover:bg-brand-primary-2 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
-            data-modal-toggle="updateProductModal">
+            class="text-slate-800 bg-transparent hover:bg-brand-primary-2 hover:text-gray-900 duration-200 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+            data-modal-toggle="contactUsModal">
             <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
@@ -444,27 +271,31 @@
           </button>
         </div>
         <!-- Modal body -->
-        <form action="#">
+        <form action="" method="get">
           <div class="flex flex-col gap-4 mb-4">
             <div>
-              <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Name</label>
-              <input type="text" name="name" id="name" 
-                class="bg-brand-primary-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:border-brand-primary focus:border-2 block w-full p-2.5"
-                placeholder="John Doe">
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Name <span
+                  class="text-red-700">*</span></label>
+              <input type="text" name="name" id="name"
+                class="bg-brand-primary-2 border border-brand-primary-4 text-gray-900 text-sm rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none block w-full p-2.5"
+                placeholder="John Doe" required>
             </div>
             <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email <span
+                  class="text-red-700">*</span></label>
               <input type="email" name="email" id="email"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                placeholder="john.doe@stellaign.com">
+                class="bg-brand-primary-2 border border-brand-primary-4 text-gray-900 text-sm rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none block w-full p-2.5"
+                placeholder="john.doe@stellaign.com" required>
             </div>
             <div>
-              <label for="category" class="block mb-2 text-sm font-medium text-gray-900">Category</label>
+              <label for="category" class="block mb-2 text-sm font-medium text-gray-900">Category <span
+                  class="text-red-700">*</span></label>
               <select id="category"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                <option selected="AIIntDA">AI Integration and Data Analytics</option>
+                class="bg-brand-primary-2 border border-brand-primary-4 text-gray-900 text-sm rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none block w-full p-2.5"
+                required>
+                <option selected="AIInt-DA">AI Integration and Data Analytics</option>
                 <option value="AppDev">Application Development</option>
-                <option value="IOTDevInt">IOT Development and Integration</option>
+                <option value="IOTDev-Int">IOT Development and Integration</option>
                 <option value="AppMod">Application Modernization</option>
                 <option value="BusiAuto">Business Automations</option>
               </select>
@@ -472,7 +303,7 @@
             <div class="sm:col-span-2">
               <label for="description" class="block mb-2 text-sm font-medium text-gray-900">Description</label>
               <textarea id="description"
-                class="block p-2.5 w-full h-32 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                class="block p-2.5 w-full h-32 resize-none text-sm text-gray-900 bg-brand-primary-2 rounded-lg border border-brand-primary-4 shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none"
                 placeholder="Write a description..."></textarea>
             </div>
           </div>
@@ -717,18 +548,14 @@
   </footer>
 
 
-  <!-- Flowbite JS -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script> -->
-  <script src="assets/js/flowbite.min.js"></script>
 
-  
   <!-- Custom script for accordions -->
   <script>
     document.querySelectorAll(".accordion-btn").forEach(btn => {
       btn.addEventListener("click", () => {
         const id = btn.getAttribute("data-accordion");
         const content = document.getElementById(`answer-${id}`);
-        
+
         // Close others
         document.querySelectorAll(".accordion-content").forEach(el => {
           if (el !== content) {
@@ -736,7 +563,7 @@
             el.classList.add("max-h-0");
           }
         });
-        
+
         // Toggle this one
         content.classList.toggle("max-h-0");
         content.classList.toggle("max-h-40");
@@ -744,13 +571,13 @@
       });
     });
   </script>
-  
-  
+
+
   <!-- Custom Script for footer Popover -->
   <script>
     const button = document.getElementById("popoverButton");
     const popover = document.getElementById("popoverContent");
-    
+
     // Hover for desktop
     button.addEventListener("mouseenter", () => {
       if (window.innerWidth >= 768) showPopover();
@@ -764,7 +591,7 @@
     popover.addEventListener("mouseleave", () => {
       if (window.innerWidth >= 768) hidePopover();
     });
-    
+
     // Click toggle for mobile
     button.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -776,83 +603,101 @@
         }
       }
     });
-    
+
     // Hide when clicking outside (mobile)
     document.addEventListener("click", (e) => {
       if (!button.contains(e.target) && !popover.contains(e.target)) {
         hidePopover();
       }
     });
-    
+
     function showPopover() {
       popover.classList.remove("opacity-0", "pointer-events-none");
       popover.classList.add("opacity-100");
     }
-    
+
     function hidePopover() {
       popover.classList.add("opacity-0", "pointer-events-none");
       popover.classList.remove("opacity-100");
     }
   </script>
-  
-  <!-- Custom Script for Closing on Outside Click -->
+
   <!-- <script>
-    const servicesBtn = document.getElementById("services-btn");
-    const servicesMenu = document.getElementById("services-menu");
-
-    // Toggle dropdown when clicking the button
-    servicesBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      servicesMenu.classList.toggle("hidden");
-    });
-
-    // Close dropdown if clicking outside
-    document.addEventListener("click", (e) => {
-      if (!servicesMenu.contains(e.target) && !servicesBtn.contains(e.target)) {
-        servicesMenu.classList.add("hidden");
-      }
-    });
-  </script> -->
-
-  <!-- Custom Script for menu on hover -->
-  <!-- <script>
-    // Get all menu items
-    const menuItems = document.querySelectorAll('.menu-item');
-    const menuDataBox = document.getElementById('menu-data');
-    
-    // Track the currently selected element
-    let selectedItem = menuItems[0];
-    selectedItem.classList.add('bg-brand-primary-2'); // Default selection style
-
-    // Add hover and leave events
-    menuItems.forEach(item => {
-      item.addEventListener('mouseenter', () => {
-        // Remove highlight from previous selection
-        if (selectedItem) selectedItem.classList.remove('bg-brand-primary-2');
-        // Highlight current hovered item
-        item.classList.add('bg-brand-primary-2');
-        selectedItem = item; // Update the selection
-      });
-    });
-  </script> -->
-
-
-  <script>
     document.addEventListener("DOMContentLoaded", () => {
       // --- Dropdown toggle functionality ---
       const servicesBtn = document.getElementById("services-btn");
       const servicesMenu = document.getElementById("services-menu");
+      const contactModal = document.getElementById("contactUsModal");
 
-      // Toggle dropdown when clicking the button
-      servicesBtn.addEventListener("click", (e) => {
+      servicesBtn?.addEventListener("click", (e) => {
         e.stopPropagation();
-        servicesMenu.classList.toggle("hidden");
+        servicesMenu?.classList.toggle("hidden");
       });
 
-      // Close dropdown if clicking outside
+      // Close dropdown if clicking outside (safely handle missing contactModal)
       document.addEventListener("click", (e) => {
-        if (!servicesMenu.contains(e.target) && !servicesBtn.contains(e.target)) {
-          servicesMenu.classList.add("hidden");
+        const clickedInsideModal = contactModal && contactModal.contains(e.target);
+        if (!servicesMenu?.contains(e.target) && !servicesBtn?.contains(e.target) && !clickedInsideModal) {
+          servicesMenu?.classList.add("hidden");
+        }
+      });
+
+      // --- Flowbite modal helpers (use data attributes) ---
+      function getModalId(modalEl) {
+        return modalEl?.id || null;
+      }
+
+      function findToggleForModal(modalId) {
+        if (!modalId) return null;
+        return document.querySelector(`[data-modal-toggle="${modalId}"]`) || document.querySelector(`[data-modal-target="${modalId}"]`);
+      }
+
+      function findHideForModal(modalId) {
+        if (!modalId) return null;
+        return document.querySelector(`[data-modal-hide="${modalId}"]`) || document.querySelector(`[data-modal-close="${modalId}"]`);
+      }
+
+      function showModalWithFlowbite(modalEl) {
+        const modalId = getModalId(modalEl);
+        if (!modalId) return;
+
+        // If there's already a toggle button, click it
+        const toggle = findToggleForModal(modalId);
+        if (toggle) {
+          toggle.click();
+          return;
+        }
+
+        // Otherwise create a temporary trigger using data attributes that Flowbite listens to
+        const tmp = document.createElement("button");
+        tmp.type = "button";
+        tmp.style.display = "none";
+        tmp.setAttribute("data-modal-toggle", modalId);
+        document.body.appendChild(tmp);
+        tmp.click();
+        // remove after short delay to allow Flowbite to pick up (immediate removal is usually fine)
+        setTimeout(() => tmp.remove(), 50);
+      }
+
+      function hideModalWithFlowbite(modalEl) {
+        const modalId = getModalId(modalEl);
+        if (!modalId) return;
+
+        const hideTrigger = findHideForModal(modalId);
+        if (hideTrigger) {
+          hideTrigger.click();
+          return;
+        }
+
+        // fallback: if Flowbite not wired up or no hide trigger, use basic hide (keeps aria consistent)
+        modalEl.classList.add("hidden");
+        modalEl.setAttribute("aria-hidden", "true");
+      }
+
+      // Close modal on Escape (using Flowbite hide trigger if available)
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && contactModal) {
+          hideModalWithFlowbite(contactModal);
         }
       });
 
@@ -861,35 +706,65 @@
       const menuDatas = document.querySelectorAll(".menu-data");
 
       if (menuItems.length > 0 && menuDatas.length > 0) {
-        // Track currently selected elements
-        let selectedItem = menuItems[0];
-        let selectedData = menuDatas[0];
+        // Track currently selected element index and last action guard
+        let selectedIndex = 0;
 
-        // Set default selection (first item)
-        selectedItem.classList.add("bg-brand-primary-2");
-        menuDatas.forEach((data, index) => {
-          data.classList.toggle("hidden", index !== 0);
+        // Helper: select item by index (desktop behavior)
+        function selectItem(index) {
+          if (index === selectedIndex) return;
+          menuItems[selectedIndex]?.classList.remove("bg-brand-primary-2");
+          menuDatas[selectedIndex]?.classList.add("hidden");
+
+          menuItems[index].classList.add("bg-brand-primary-2");
+          menuDatas[index].classList.remove("hidden");
+
+          selectedIndex = index;
+        }
+
+        // Initial state
+        menuItems.forEach((_, i) => {
+          menuDatas[i].classList.toggle("hidden", i !== 0);
         });
+        menuItems[0].classList.add("bg-brand-primary-2");
 
-        // Add hover + selection logic
+        // Attach unified handlers
         menuItems.forEach((item, index) => {
-          item.addEventListener("mouseenter", () => {
-            // Remove previous highlights
-            if (selectedItem) selectedItem.classList.remove("bg-brand-primary-2");
-            if (selectedData) selectedData.classList.add("hidden");
+          const unifiedHandler = (eventType) => (e) => {
 
-            // Highlight new hovered item
-            item.classList.add("bg-brand-primary-2");
-            menuDatas[index].classList.remove("hidden");
+            // If this is a click and viewport is mobile (<768px), open modal via Flowbite instead of selecting
+            if (eventType === "click" && window.innerWidth < 768) {
+              e.stopPropagation?.();
+              if (contactModal) {
+                showModalWithFlowbite(contactModal);
+              } else {
+                // fallback: if modal missing, keep normal behavior
+                selectItem(index);
+              }
+              return;
+            }
 
-            // Update last selected
-            selectedItem = item;
-            selectedData = menuDatas[index];
+            // Desktop/tablet or non-click events: run the selection logic
+            e.stopPropagation?.();
+            selectItem(index);
+          };
+
+          // click (modal on mobile) and pointerenter (desktop hover)
+          item.addEventListener("click", unifiedHandler("click"));
+          item.addEventListener("pointerenter", unifiedHandler("pointerenter"));
+
+          // keyboard support (Enter / Space)
+          item.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              // simulate click behavior (modal on mobile, select on desktop)
+              unifiedHandler("click")(e);
+            }
           });
         });
       }
     });
-  </script>
+  </script> -->
+
 
 </body>
 
