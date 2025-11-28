@@ -1,6 +1,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2LLCXG2GD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X2LLCXG2GD');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/logo/favicon.png">
@@ -12,7 +22,7 @@
     <title>404 Not Found</title>
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen">
     <nav class="relative z-30 bg-brand-primary-1 border-gray-600 shadow-lg">
         <div class="hidden md:flex flex-wrap justify-between items-center mx-auto max-w-screen-2xl p-4 px-4">
             <a href="https://stellaign.com" class="flex items-center space-x-2 rtl:space-x-reverse">
@@ -385,12 +395,49 @@
     </div>
 
 
+    <!-- <div id="404-container"
+        class="bg-[url('/assets/images/404.png')] bg-brand-primary-1/95 bg-blend-overlay bg-center bg-contain bg-no-repeat grow">
+        <div class="flex justify-center items-center w-full h-full">
+            <div>
+                <H1 class="text-4xl font-bold pb-6 text-center">Looks like you are lost!</H1>
+                <p class="text-base font-bold text-center">The page you are looking for does not exist.<br>Click on the
+                    button below to go to home page.</p>
+                <a href="./" class="items-center">
+                    <div id="home-redirect-button" class="h-9 w-30 rounded-2xl mt-5 bg-brand-primary hover:bg-brand-primary-19 transition-colors duration-200">
+                        <span class="flex justify-center my-auto text-brand-primary-1">Home</span>
+                    </div>
+                </a>
+            </div>
+        </div>
 
+    </div> -->
 
+    <main class="bg-brand-primary-1 flex grow items-center justify-center relative overflow-hidden">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-15 max-sm:py-15 text-center">
+            <img src="assets/images/404.png" class="md:max-w-2xl opacity-25 mb-0" alt="404 image">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 mb-6 -mt-5">
+                Page not found
+            </h1>
 
+            <p class="text-lg text-slate-800 mb-10 max-w-xl mx-auto leading-relaxed">
+                Sorry, we couldn't find the page you're looking for. It might have been moved, deleted, or you may have
+                mistyped the address.
+            </p>
 
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="/"
+                    class="w-auto px-8 py-3 bg-brand-primary text-white font-medium rounded-full hover:bg-brand-primary-19 transition-all shadow-lg hover:shadow-xl">
+                    Take me Home
+                </a>
+            </div>
 
-    <footer class="p-4 bg-white md:p-8 lg:p-10">
+            <p class="text-lg text-slate-800 mt-7 max-w-lg mx-auto leading-relaxed">
+                You will be automatically redirected to Home in <span id="countdown"></span> sec.
+            </p>
+        </div>
+    </main>
+
+    <footer class="p-4 bg-white">
         <div class="mx-auto max-w-screen-xl text-center">
             <div class="flex justify-center items-center">
                 <a href="https://www.stellaign.com" class="text-2xl font-semibold text-gray-900">
@@ -483,6 +530,24 @@
                 Rights Reserved.</span>
         </div>
     </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const countdownElement = document.getElementById('countdown');
+            let timeLeft = 15;
+
+            const timer = setInterval(() => {
+                timeLeft--;
+                countdownElement.textContent = timeLeft;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    window.location.href = './';
+                }
+            }, 1000);
+        });
+    </script>
 </body>
 
 </html>
