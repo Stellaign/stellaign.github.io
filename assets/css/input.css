@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
+    --breakpoint-xs: 320px;
+    --font-primary: "montserrat", sans-serif;
+    --font-secondary: "roboto", sans-serif;
     --color-brand-primary: #303fa4;
     --color-brand-primary-1: #f7f8fd;
     --color-brand-primary-2: #e7e9f8;
@@ -55,6 +60,9 @@
     --color-brand-secondary-24: #1f1700;
     --color-brand-secondary-25: #0a0800;
     
+    --color-title-col: #202245;
+    --color-subtitle-col: #6A7282;
+    --color-heroButton-col: #4A5CD3;
     /* socials */
     --color-face-primary: #0866ff;
     --color-tube-primary: #ff0033;
@@ -62,3 +70,71 @@
     --color-x-primary: #010b13;
 }
 
+.section-titles {
+    @apply font-primary text-title-col text-2xl md:text-4xl font-bold md:font-semibold my-6 leading-tight;
+}
+
+.micro-lines {
+    @apply font-secondary font-light text-subtitle-col md:text-lg lg:text-xl;
+}
+
+/* Trust section */
+
+.trust-glowbox {
+    @apply absolute inset-0 rounded-3xl not-hover:bg-gradient-to-r from-[#5DD7ED] to-[#303FA4] group-hover:bg-[#92acff] blur-md opacity-20 transition-all duration-200 group-hover:opacity-40 group-hover:blur-sm;
+}
+
+.trust-gradient-border {
+    @apply relative rounded-3xl not-hover:bg-gradient-to-r from-[#5DD7ED] to-[#303FA4] p-[2px] group-hover:pt-0 group-hover:px-0 group-hover:pb-[2px] group-hover:bg-[#92acff] transition-all duration-200;
+}
+
+.trust-content-box {
+    @apply rounded-[1.4rem] bg-white p-5 not-group-hover:max-md:h-[12rem] not-group-hover:max-lg:h-[13rem] not-group-hover:max-md:flex not-group-hover:max-md:flex-col not-group-hover:max-md:justify-around transition-all duration-200 group-hover:bg-blue-50 group-hover:shadow-lg;
+}
+
+/* Our Expertise section */
+
+.expertise-heading {
+    @apply text-2xl md:text-3xl font-semibold;
+}
+
+/* How we operate section */
+
+.hwo-data-box {
+    @apply grid grid-cols-[15%_80%] sm:grid-cols-[10%_10%_75%] gap-3 md:gap-5 shadow-lg hover:shadow-xl shadow-brand-primary/30 bg-white rounded-3xl p-5 mt-6 sm:mx-10 md:mx-0 transition-all duration-200;
+}
+
+.hwo-box-content {
+    @apply md:pl-2 md:mr-4 my-auto;
+}
+
+.hwo-box-content-serial {
+    @apply font-primary text-3xl md:text-4xl font-semibold text-brand-primary;
+}
+
+.hwo-box-content-icon {
+    @apply max-sm:hidden flex justify-end my-auto;
+}
+
+.hwo-box-content-heading {
+    @apply font-primary text-xl md:text-xl font-semibold text-brand-primary;
+}
+
+.hwo-box-content-paragh {
+    @apply font-secondary max-md:font-light text-subtitle-col text-sm sm:text-base mt-2;
+}
+
+/* Why choose us section */
+.wcu-box {
+    @apply flex flex-col justify-center border-2 rounded-3xl p-7;
+}
+
+.wcu-box-title {
+    @apply text-2xl font-semibold text-slate-800 leading-tight;
+}
+
+.wcu-box-paragh {
+    @apply hidden mt-4 text-sm sm:text-base text-slate-600 max-w-md;
+}
+
+/* cta section */

@@ -5,35 +5,41 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2LLCXG2GD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-X2LLCXG2GD');
+    gtag("config", "G-X2LLCXG2GD");
   </script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="/assets/logo/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/logo/favicon.png" />
   <!-- Flowbite JS -->
   <script src="assets/js/flowbite.min.js" defer></script>
   <script src="assets/js/indScript.js"></script>
   <script src="assets/js/script.js"></script>
-  <link href="./assets/css/stylesheet.css" rel="stylesheet">
+  <link href="./assets/css/stylesheet.css" rel="stylesheet" />
   <title>Home</title>
 </head>
 
-<body>
+<body class="font-primary selection:bg-brand-primary selection:text-brand-secondary min-w-[320px]">
   <nav class="relative z-30 bg-brand-primary-1 border-gray-600 shadow-lg">
     <div class="hidden md:flex flex-wrap justify-between items-center mx-auto max-w-screen-2xl p-4 px-4">
-      <a href="https://stellaign.com" class="flex items-center space-x-2 rtl:space-x-reverse">
-        <img src="./assets/logo/originalLogoHD.png" class="h-9" alt="Stellaign Logo" />
-        <span class="self-center text-3xl font-semibold whitespace-nowrap">Stellaign</span>
+      <a href="./" class="flex items-center space-x-2 rtl:space-x-reverse">
+        <img src="./assets/logo/Secondary Logo@4x.png" class="h-11" alt="Stellaign Logo" />
       </a>
 
-      <a href="mailto:connect@stellaign.com" class="hover:underline text-lg">connect@stellaign.com</a>
+      <p class="text-lg">
+        <a href="mailto:connect@stellaign.com" class="hover:underline">connect@stellaign.com</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="tel:+919078780079" class="hover:underline">(+91) 9078780079</a>
+      </p>
 
       <div class="flex space-x-1.5 justify-end sm:mt-0">
-        <a href="https://www.youtube.com/@placeholder" target="_blank" class="text-gray-500 hover:text-tube-primary">
+        <a href="https://www.youtube.com/@StellaignAcademy" target="_blank"
+          class="text-gray-500 hover:text-tube-primary">
           <svg class="w-5.5 h-5.5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="-143 145 512 512"
             aria-hidden="true">
             <g stroke-width="0" />
@@ -81,9 +87,8 @@
     </div>
 
     <div class="flex flex-wrap justify-between z-30 bg-brand-primary-2 items-center mx-auto p-4 px-4">
-      <a href="https://stellaign.com" class="flex items-center space-x-2 rtl:space-x-reverse md:hidden">
-        <img src="./assets/logo/originalLogoHD.png" class="h-9" alt="Stellaign Logo" />
-        <span class="self-center text-3xl font-semibold whitespace-nowrap">Stellaign</span>
+      <a href="./" class="flex justify-center items-center rtl:space-x-reverse md:hidden">
+        <img src="./assets/logo/Secondary Logo@4x.png" class="h-9" alt="Stellaign Logo" />
       </a>
       <button data-collapse-toggle="mega-menu-full" type="button"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-brand-primary-8 rounded-lg md:hidden hover:bg-brand-primary-1 focus:outline-none focus:ring-2 focus:ring-brand-primary-3"
@@ -105,13 +110,14 @@
           </li>
           <li>
             <button id="services-btn" data-collapse-toggle="services-menu"
-              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm md:w-auto hover:bg-brand-primary-1 md:hover:bg-transparent md:border-0 md:hover:text-brand-primary md:p-0">Services
-              We Provide
+              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm md:w-auto hover:bg-brand-primary-1 md:hover:bg-transparent md:border-0 md:hover:text-brand-primary md:p-0">
+              Services We Provide
               <svg class="w-2.5 h-2.5 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="m1 1 4 4 4-4" />
-              </svg></button>
+              </svg>
+            </button>
           </li>
           <li class="hidden">
             <a href="#" id="products-anchor"
@@ -139,51 +145,68 @@
           <li>
             <div>
               <button type="button" class="menu-item block w-full p-3 rounded-lg hover:bg-brand-primary-2">
-                <div class="font-semibold text-left">AI Integration and Data Analytics</div>
+                <div class="font-semibold text-left">
+                  AI Integration and Data Analytics
+                </div>
                 <span class="block text-sm text-left text-gray-500">Helping you use smart automation and data to make
-                  better decisions and work more efficiently.</span>
+                  better
+                  decisions and work more efficiently.</span>
               </button>
             </div>
           </li>
           <li>
             <button type="button" class="menu-item block w-full p-3 rounded-lg hover:bg-brand-primary-2">
-              <div class="font-semibold text-left">Application Development</div>
+              <div class="font-semibold text-left">
+                Application Development
+              </div>
               <span class="block text-sm text-left text-gray-500">Building fast, reliable apps for your business that
-                give users a great experience on any device.</span>
+                give
+                users a great experience on any device.</span>
             </button>
           </li>
           <li>
             <button type="button" class="menu-item block w-full p-3 rounded-lg hover:bg-brand-primary-2">
-              <div class="font-semibold text-left">IOT Development and Integration</div>
-              <span class="block text-sm text-left text-gray-500">Connecting your devices and data streams, which
-                helps you make smarter decisions in real-time.</span>
+              <div class="font-semibold text-left">
+                IOT Development and Integration
+              </div>
+              <span class="block text-sm text-left text-gray-500">Connecting your devices and data streams, which helps
+                you
+                make smarter decisions in real-time.</span>
             </button>
           </li>
           <li>
             <button type="button" class="menu-item block w-full p-3 rounded-lg hover:bg-brand-primary-2">
-              <div class="font-semibold text-left">Application Modernization</div>
+              <div class="font-semibold text-left">
+                Application Modernization
+              </div>
               <span class="block text-sm text-left text-gray-500">Modernizing your old systems to make them fast,
-                flexible, and ready for today's business needs.</span>
+                flexible, and
+                ready for today's business needs.</span>
             </button>
           </li>
           <li>
             <button type="button" class="menu-item block w-full p-3 rounded-lg hover:bg-brand-primary-2">
               <div class="font-semibold text-left">Business Automations</div>
-              <span class="block text-sm text-left text-gray-500">Simplifying your daily work with smart automation
-                to cut down on manual tasks and grow your business.</span>
+              <span class="block text-sm text-left text-gray-500">Simplifying your daily work with smart automation to
+                cut down
+                on manual tasks and grow your business.</span>
             </button>
           </li>
         </ul>
 
         <div class="hidden md:flex md:flex-col bg-brand-primary-2 h-full rounded-xl my-auto ml-3 p-6">
           <div class="menu-data flex flex-col justify-between h-full">
-            <h1 class="text-3xl text-slate-900 pb-5">Enhance your business performance with our AI Integration and Data
-              Analytics services.</h1>
-            <p class="text-base text-slate-800 pb-5">We help you transform data into actionable insights, automate
-              workflows, and make smarter, faster
-              decisions. From predicting market trends to improving customer experiences, our AI-driven solutions
-              empower
-              your business to operate efficiently and grow intelligently.</p>
+            <h1 class="text-3xl text-slate-900 pb-5">
+              Enhance your business performance with our AI Integration and
+              Data Analytics services.
+            </h1>
+            <p class="text-base text-slate-800 pb-5">
+              We help you transform data into actionable insights, automate
+              workflows, and make smarter, faster decisions. From predicting
+              market trends to improving customer experiences, our AI-driven
+              solutions empower your business to operate efficiently and grow
+              intelligently.
+            </p>
             <div class="flex justify-end">
               <button id="contactUsButton" data-modal-target="contactUsModal" data-modal-toggle="contactUsModal"
                 class="block text-white bg-brand-primary hover:bg-brand-primary-18 transition-colors duration-200 rounded-xl text-sm px-5 py-2.5 text-center"
@@ -193,12 +216,17 @@
             </div>
           </div>
           <div class="menu-data hidden flex flex-col justify-between h-full">
-            <h1 class="text-3xl text-slate-900">Bring your ideas to life with our Application Development services.
+            <h1 class="text-3xl text-slate-900">
+              Bring your ideas to life with our Application Development
+              services.
             </h1>
-            <p class="text-base text-slate-800">We design and build high-performing, scalable applications tailored
-              to your business goals. From concept
-              to deployment, our expert team ensures seamless functionality, intuitive design, and reliable performance
-              — empowering your business to deliver exceptional digital experiences and drive growth.</p>
+            <p class="text-base text-slate-800">
+              We design and build high-performing, scalable applications
+              tailored to your business goals. From concept to deployment, our
+              expert team ensures seamless functionality, intuitive design,
+              and reliable performance — empowering your business to deliver
+              exceptional digital experiences and drive growth.
+            </p>
             <div class="flex justify-end">
               <button id="contactUsButton" data-modal-target="contactUsModal" data-modal-toggle="contactUsModal"
                 class="block bg-brand-primary hover:bg-brand-primary-18 transition-colors duration-200 text-white rounded-xl text-sm px-5 py-2.5 text-center"
@@ -209,11 +237,16 @@
           </div>
 
           <div class="menu-data hidden flex flex-col justify-between h-full">
-            <h1 class="text-3xl text-slate-900">Unlock the power of connectivity with our IoT Development and
-              Integration services.</h1>
-            <p class="text-base text-slate-800">We help businesses create smart, interconnected systems that
-              streamline operations, enhance efficiency, and deliver real-time insights. From device integration to
-              cloud connectivity, we ensure your infrastructure is intelligent, data-driven, and ready for the future.
+            <h1 class="text-3xl text-slate-900">
+              Unlock the power of connectivity with our IoT Development and
+              Integration services.
+            </h1>
+            <p class="text-base text-slate-800">
+              We help businesses create smart, interconnected systems that
+              streamline operations, enhance efficiency, and deliver real-time
+              insights. From device integration to cloud connectivity, we
+              ensure your infrastructure is intelligent, data-driven, and
+              ready for the future.
             </p>
             <div class="flex justify-end">
               <button id="contactUsButton" data-modal-target="contactUsModal" data-modal-toggle="contactUsModal"
@@ -224,12 +257,18 @@
             </div>
           </div>
           <div class="menu-data hidden flex flex-col justify-between h-full">
-            <h1 class="text-3xl text-slate-900">Revitalize your legacy systems with our Application Modernization
-              services.</h1>
-            <p class="text-base text-slate-800">We transform outdated applications into scalable, high-performing,
-              and future-ready solutions that align with modern business needs. By leveraging the latest technologies
-              and cloud infrastructure, we help you enhance performance, reduce maintenance costs, and stay competitive
-              in a rapidly evolving digital landscape.</p>
+            <h1 class="text-3xl text-slate-900">
+              Revitalize your legacy systems with our Application
+              Modernization services.
+            </h1>
+            <p class="text-base text-slate-800">
+              We transform outdated applications into scalable,
+              high-performing, and future-ready solutions that align with
+              modern business needs. By leveraging the latest technologies and
+              cloud infrastructure, we help you enhance performance, reduce
+              maintenance costs, and stay competitive in a rapidly evolving
+              digital landscape.
+            </p>
             <div class="flex justify-end">
               <button id="contactUsButton" data-modal-target="contactUsModal" data-modal-toggle="contactUsModal"
                 class="block text-white bg-brand-primary hover:bg-brand-primary-18 transition-colors duration-200 rounded-xl text-sm px-5 py-2.5 text-center"
@@ -239,11 +278,18 @@
             </div>
           </div>
           <div class="menu-data hidden flex flex-col justify-between h-full">
-            <h1 class="text-3xl text-slate-900">Streamline your operations with our Business Automation services.</h1>
-            <p class="text-base text-slate-800">We design intelligent workflows that eliminate manual tasks, minimize
-              errors, and boost productivity across your organization. By integrating smart automation tools and
-              AI-driven systems, we help you achieve operational efficiency, reduce costs, and allow your team to focus
-              on innovation and growth.</p>
+            <h1 class="text-3xl text-slate-900">
+              Streamline your operations with our Business Automation
+              services.
+            </h1>
+            <p class="text-base text-slate-800">
+              We design intelligent workflows that eliminate manual tasks,
+              minimize errors, and boost productivity across your
+              organization. By integrating smart automation tools and
+              AI-driven systems, we help you achieve operational efficiency,
+              reduce costs, and allow your team to focus on innovation and
+              growth.
+            </p>
             <div class="flex justify-end">
               <button id="contactUsButton" data-modal-target="contactUsModal" data-modal-toggle="contactUsModal"
                 class="block bg-brand-primary hover:bg-brand-primary-18 transition-colors duration-200 text-white rounded-xl text-sm px-5 py-2.5 text-center"
@@ -288,24 +334,29 @@
                   class="text-red-700">*</span></label>
               <input type="text" name="name" id="name"
                 class="bg-brand-primary-2 border border-brand-primary-4 text-gray-900 text-sm rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none block w-full p-2.5"
-                placeholder="John Doe" required>
+                placeholder="John Doe" required />
             </div>
             <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email <span
                   class="text-red-700">*</span></label>
               <input type="email" name="email" id="email"
                 class="bg-brand-primary-2 border border-brand-primary-4 text-gray-900 text-sm rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none block w-full p-2.5"
-                placeholder="john.doe@stellaign.com" required>
+                placeholder="john.doe@stellaign.com" required />
             </div>
             <div>
-              <label for="category" class="block mb-2 text-sm font-medium text-gray-900">Category </label>
+              <label for="category" class="block mb-2 text-sm font-medium text-gray-900">Category
+              </label>
               <select id="category"
                 class="bg-brand-primary-2 border border-brand-primary-4 text-gray-900 text-sm rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none block w-full p-2.5"
                 required>
                 <option selected value="default">Select a Category...</option>
-                <option value="AIInt-DA">AI Integration and Data Analytics</option>
+                <option value="AIInt-DA">
+                  AI Integration and Data Analytics
+                </option>
                 <option value="AppDev">Application Development</option>
-                <option value="IOTDev-Int">IOT Development and Integration</option>
+                <option value="IOTDev-Int">
+                  IOT Development and Integration
+                </option>
                 <option value="AppMod">Application Modernization</option>
                 <option value="BusiAuto">Business Automations</option>
               </select>
@@ -334,7 +385,10 @@
     <div class="relative w-full max-w-2xl max-h-[calc(100dvh-3.5rem)] overflow-y-auto p-4">
       <!-- Modal content -->
       <div class="relative p-4 bg-brand-primary-1 rounded-lg shadow sm:p-5">
-        <div class="flex justify-end">
+        <div class="flex justify-end border-b pb-3">
+          <h1 class="font-bold text-lg">
+            We're excited that you're interested in joining our team!
+          </h1>
           <button type="button"
             class="text-slate-800 bg-transparent hover:bg-brand-primary-2 hover:text-gray-900 duration-200 rounded-lg text-sm p-1.5 ml-auto"
             data-modal-toggle="careerModal">
@@ -348,12 +402,18 @@
         </div>
         <!-- Modal body -->
         <div>
-          <h1 class="font-bold text-lg">We're excited that you're interested in joining our team!</h1>
-          <p class="text-base pt-3">At the moment, we’re not hosting a dedicated careers page, but we’d love to hear
-            from talented individuals who want to work with us.</p>
-          <p class="text-base pt-3">You can share your resume and any relevant documents directly at <a
-              href="mailto:careers@stellaign.com" class="hover:underline">careers@stellaign.com</a></p>
-          <p class="text-base pt-3">Our team will review your profile and reach out if there’s a suitable opportunity.
+          <p class="text-base pt-3">
+            At the moment, we’re not hosting a dedicated careers page, but
+            we’d love to hear from talented individuals who want to work with
+            us.
+          </p>
+          <p class="text-base pt-3">
+            You can share your resume and any relevant documents directly at
+            <a href="mailto:careers@stellaign.com" class="hover:underline font-bold">careers@stellaign.com</a>
+          </p>
+          <p class="text-base pt-3">
+            Our team will review your profile and reach out if there’s a
+            suitable opportunity.
           </p>
           <p class="text-base pt-3">We look forward to hearing from you!</p>
         </div>
@@ -362,206 +422,785 @@
   </div>
 
   <section id="hero">
-    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-      <div class="mr-auto place-self-center lg:col-span-7">
-        <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
-          Transforming Ideas into Digital Reality.</h1>
-        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">From
-          checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment
-          stack.</p>
-        <a href="#"
-          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
-          Speak to Sales
-        </a>
-      </div>
-      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
+    <div class="relative w-full overflow-x-clip">
+      <div
+        class="max-w-screen-xl flex justify-center lg:grid lg:grid-cols-10 my-10 md:my-16 lg:px-8 px-4 mx-auto lg:gap-8 xl:gap-0">
+        <div class="min-sm:max-w-xl max-w-2xl mx-auto lg:col-span-4">
+          <h1 class="font-primary min-sm:max-w-lg text-2xl md:text-4xl text-center lg:text-left text-title-col font-bold tracking-normal leading-tight mb-9
+          selection:bg-brand-primary selection:text-brand-secondary">
+            We build intelligent software solutions for
+            <span class="inline-flex items-center gap-[2px]">
+              <span class="bg-gradient-to-r from-[#27CAE6] to-[#4455c8] bg-clip-text text-transparent">
+                MODERN&nbsp;BUSINESSES.</span>
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" class="max-sm:hidden shrink-0"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M-9.01474e-05 6.58168C4.87897 5.98407 8.6569 3.89647 11.2729 -5.92974e-06C12.0685 4.57694 14.4829 8.11756 18.8416 10.6494C13.865 11.2181 10.0757 13.3058 7.45547 17.209C6.66248 12.6326 4.24761 9.09442 -9.01474e-05 6.58168Z"
+                  fill="#4161CB" />
+              </svg>
+              <svg width="7" height="6" viewBox="0 0 7 6" fill="none" class="max-sm:hidden shrink-0 translate-y-[-8px]"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.03516e-05 2.23455C1.65655 2.03166 2.9392 1.32289 3.82735 -1.67311e-06C4.09749 1.55392 4.91718 2.756 6.39703 3.61557C4.70739 3.80867 3.42091 4.51746 2.5313 5.84263C2.26207 4.28891 1.4422 3.08766 6.03516e-05 2.23455Z"
+                  fill="#4161CB" />
+              </svg>
+            </span>
+          </h1>
+
+          <div class="relative max-sm:mb-13 mb-10 h-[120px] md:h-[150px] lg:h-[160px] overflow-y-visible">
+
+            <!-- Slide 1 -->
+            <div class="hero-slide absolute inset-0 opacity-100 translate-x-0 transition-all duration-500">
+              <h2 class="font-primary mb-3 text-xl md:text-2xl font-semibold leading-tight text-center lg:text-left">
+                AI that integrates with your systems, not against them.
+              </h2>
+              <p class="micro-lines text-center lg:text-left">
+                Integrate AI into your existing applications and data pipelines for practical, measurable impact.
+              </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide absolute inset-0 opacity-0 translate-x-4 transition-all duration-500">
+              <h2 class="font-primary mb-3 text-xl md:text-2xl font-semibold leading-tight text-center lg:text-left">
+                Modern applications built for real-world business needs.
+              </h2>
+              <p class="micro-lines text-center lg:text-left">
+                Secure, scalable web and mobile applications tailored to your requirements.
+              </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide absolute inset-0 opacity-0 translate-x-4 transition-all duration-500">
+              <h2 class="font-primary mb-3 text-xl md:text-2xl font-semibold leading-tight text-center lg:text-left">
+                Smart IoT solutions that turn devices into actionable insights.
+              </h2>
+              <p class="micro-lines text-center lg:text-left">
+                Real-time data, seamless integration, and smarter operational control.
+              </p>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="hero-slide absolute inset-0 opacity-0 translate-x-4 transition-all duration-500">
+              <h2 class="font-primary mb-3 text-xl md:text-2xl font-semibold leading-tight text-center lg:text-left">
+                Modernize outdated software for performance and scale.
+              </h2>
+              <p class="micro-lines text-center lg:text-left">
+                Cloud-ready, secure, and future-proof modernization solutions.
+              </p>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="hero-slide absolute inset-0 opacity-0 translate-x-4 transition-all duration-500">
+              <h2 class="font-primary mb-3 text-xl md:text-2xl font-semibold leading-tight text-center lg:text-left">
+                Smart automation that reduces manual work and improves efficiency.
+              </h2>
+              <p class="micro-lines text-center lg:text-left">
+                Automate repetitive workflows to improve efficiency and accuracy.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="flex justify-center lg:justify-self-start">
+            <button id="contactUsButton" data-modal-target="contactUsModal" data-modal-toggle="contactUsModal"
+              class="font-secondary inline-flex items-center justify-center px-9 py-3 text-base font-medium text-center bg-heroButton-col hover:bg-brand-primary text-slate-100 rounded-4xl hover:shadow-lg shadow-slate-200 transition-all duration-250">
+              Get in Touch
+            </button>
+          </div>
+        </div>
+
+        <div class="relative hidden lg:block lg:col-span-6 overflow-visible">
+          <div class="relative w-full h-full overflow-visible">
+            <img src="./assets/images/gradient_image.png" alt="hero-visual"
+              class="absolute top-[-83%] lg:right-[-60%] xl:right-[-38%] w-[520px] max-w-none lg:scale-250 xl:scale-280 origin-top-right z-0 pointer-events-none" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-
-  <section id="ourExpertise" class="bg-brand-primary-1 max-md:px-5 py-5">
-    <div class="w-full max-w-[768px] mx-auto mt-5 md:px-5">
-      <h2 class="text-3xl md:text-4xl font-bold m-6 text-gray-800 text-center">Our Expertise</h2>
-
-      <!-- Accordion Item -->
-      <div class="border-2 border-brand-primary-3 rounded-2xl px-4 my-4 group">
-        <button data-accordion="1" class="accordion-btn w-full flex justify-between items-center py-4 text-left">
-          <span class="text-base md:text-lg font-medium text-gray-800">AI Integration and Data Analytics</span>
-        </button>
-        <div id="answer-1"
-          class="accordion-content max-h-0 overflow-hidden transition-all ease-in-out md:group-hover:max-h-40 md:group-hover:pb-4 text-gray-600 text-sm md:text-base">
-          We provide web development, mobile app development, SEO services, custom software solutions, and MVP
-          development.
+  <section id="trust_indicators">
+    <div class="max-w-screen-xl mx-auto px-10 my-25 md:mt-10 lg:mt-32 mb-10 md:mb-24 lg:mb-28">
+      <div>
+        <h2 class="section-titles text-center">
+          Built for Trust.<br><span class="text-brand-primary">Designed for Long-Term Growth.</span>
+        </h2>
+        <div class="max-w-lg mx-auto">
+          <p class="micro-lines text-center">
+            We combine modern technology with a transparent process to deliver reliable, business-focused solutions.
+          </p>
         </div>
       </div>
 
-      <!-- Accordion Item -->
-      <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
-        <button data-accordion="2" class="accordion-btn w-full flex justify-between items-center py-4 text-left">
-          <span class="text-base md:text-lg font-medium text-gray-800">Application Development</span>
-        </button>
-        <div id="answer-2"
-          class="accordion-content max-h-0 overflow-hidden transition-all ease-in-out md:group-hover:max-h-40 md:group-hover:pb-4 text-gray-600 text-sm md:text-base">
-          Yes, we work with clients across the globe, offering flexible solutions tailored to different regions and
-          industries.
-        </div>
-      </div>
+      <div class="mt-10 lg:mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
 
-      <!-- Accordion Item -->
-      <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
-        <button data-accordion="3" class="accordion-btn w-full flex justify-between items-center py-4 text-left">
-          <span class="text-base md:text-lg font-medium text-gray-800">IoT Development and Integration</span>
-        </button>
-        <div id="answer-3"
-          class="accordion-content max-h-0 overflow-hidden transition-all ease-in-out md:group-hover:max-h-40 md:group-hover:pb-4 text-gray-600 text-sm md:text-base">
-          You can reach out to us via our contact page, and our team will get back to you with a tailored proposal.
-        </div>
-      </div>
+        <div class="group inline-block transition-all duration-250">
+          <div class="relative">
+            <!-- Glow -->
+            <div class="trust-glowbox">
+            </div>
+            <!-- Gradient border -->
+            <div class="trust-gradient-border">
+              <!-- Inner content -->
+              <div class="trust-content-box">
+                <!-- Icon -->
+                <div class="absolute right-4 top-4">
+                  <svg viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 group-hover:translate-y-[-1.55em] group-hover:scale-150 transition-all duration-200 not-group-hover:rotate-[-10.15deg]">
+                    <path
+                      d="M45.2945 51.622C45.108 52.664 44.458 53.5789 43.4875 54.1656C42.517 54.7523 41.3055 54.9626 40.1196 54.7503C38.9336 54.538 37.8703 53.9205 37.1636 53.0336C36.4569 52.1467 36.1647 51.063 36.3512 50.0211C36.5377 48.9791 37.1877 48.0641 38.1582 47.4775C39.1287 46.8908 40.3402 46.6805 41.5261 46.8928C42.7121 47.1051 43.7754 47.7226 44.4821 48.6095C45.1888 49.4964 45.481 50.58 45.2945 51.622ZM61.8735 36.3479C61.2805 36.2417 60.6747 36.3469 60.1895 36.6402C59.7043 36.9335 59.3793 37.391 59.286 37.912C59.1927 38.433 59.3389 38.9748 59.6922 39.4183C60.0456 39.8617 60.5772 40.1705 61.1702 40.2766C61.7632 40.3828 62.3689 40.2776 62.8541 39.9843C63.3394 39.6909 63.6644 39.2334 63.7576 38.7125C63.8509 38.1915 63.7048 37.6497 63.3514 37.2062C62.9981 36.7628 62.4664 36.454 61.8735 36.3479ZM71.4547 43.4597L71.1197 43.939C70.6169 44.6395 70.0128 45.2766 69.322 45.8351L68.8683 46.204C68.6201 46.4032 68.3036 46.5251 67.964 46.5524C67.6244 46.5797 67.2789 46.5109 66.9766 46.3559L64.899 45.2785C64.8343 45.2469 64.7636 45.2268 64.6912 45.2194C64.6188 45.212 64.5462 45.2175 64.4775 45.2355L64.116 45.6047L63.3779 47.4593C63.2924 47.6613 63.1552 47.8413 62.9766 47.9857C62.798 48.13 62.5828 48.235 62.3473 48.2925C61.9605 48.3394 61.5662 48.341 61.1743 48.2974C60.2247 48.2382 59.2821 48.0735 58.3684 47.8074L57.7461 47.623C57.4144 47.5265 57.1218 47.3394 56.9114 47.0892C56.7011 46.8391 56.5841 46.5393 56.578 46.234L56.5264 44.1244C56.5255 44.0607 56.5091 43.9973 56.4782 43.9386C56.4472 43.8798 56.4026 43.8272 56.3473 43.7842C56.2524 43.7131 56.1439 43.6748 56.0218 43.6692L54.3034 43.8846L54.3691 43.9815L54.8292 44.737C55.4661 45.8025 55.947 46.9144 56.2719 48.0727L56.5052 48.9092C56.5497 49.0919 56.5584 49.2787 56.531 49.4612C56.4107 50.133 55.7887 50.4109 55.7887 50.4109L52.7847 51.9045C52.6115 51.9905 52.4606 52.1067 52.3408 52.2464C52.221 52.3862 52.1347 52.5468 52.0867 52.719C52.0387 52.8912 52.0301 53.0717 52.0612 53.25C52.0924 53.4284 52.1627 53.6011 52.2683 53.7583L52.2669 53.7662L54.7035 56.3959C54.5328 56.645 54.4556 56.9383 54.4825 57.2356C54.5094 57.533 54.6391 57.8198 54.8539 58.0569L54.3508 58.7534C53.6498 59.7273 52.809 60.6135 51.848 61.391L51.1641 61.9376C50.9219 62.1317 50.6132 62.2501 50.282 62.276C49.9508 62.302 49.614 62.234 49.32 62.0819L46.2028 60.4696C45.8407 60.2885 45.4198 60.235 45.028 60.3205C44.6361 60.406 44.3034 60.6237 44.0993 60.9284L42.833 64.0062C42.7217 64.2825 42.5124 64.5162 42.2353 64.6736C41.9583 64.831 41.6278 64.904 41.2918 64.8819L40.3345 64.8159C39.6852 64.7777 39.0378 64.6984 38.3972 64.5786L38.3167 64.5642C37.6689 64.4437 37.0273 64.2923 36.395 64.1107L35.4921 63.8437C35.1707 63.7498 34.8864 63.5696 34.68 63.3287C34.4736 63.0879 34.3557 62.7987 34.343 62.5027L34.2529 59.3969C34.2452 59.0756 34.1094 58.7619 33.8697 58.5112C33.63 58.2606 33.3018 58.0891 32.9429 58.0271L32.4146 58.0136L28.9568 58.4326C28.6275 58.4741 28.2871 58.4214 27.9845 58.282C27.6819 58.1426 27.4328 57.9237 27.2728 57.6568L26.821 56.9069C26.183 55.8441 25.6957 54.7201 25.3707 53.5617L25.1412 52.73C25.0641 52.4369 25.0918 52.1339 25.2205 51.8638C25.3491 51.5936 25.5723 51.3699 25.8584 51.2243L28.8624 49.7307C29.4886 49.4292 29.5826 48.8784 29.5953 48.8077C29.6528 48.4916 29.5809 48.1626 29.3923 47.8793L26.9563 45.2456C26.9563 45.2456 26.4693 44.7692 26.5896 44.0974C26.6229 43.9114 26.695 43.7405 26.806 43.5847L27.3091 42.8881C28.0067 41.9129 28.8332 41.0336 29.7887 40.2505L30.4727 39.7039C30.7166 39.5068 31.0288 39.3867 31.3637 39.3614C31.6987 39.336 32.0389 39.4066 32.3347 39.5628L35.4385 41.1726C35.8006 41.3538 36.2214 41.4072 36.6133 41.3218C37.0051 41.2363 37.3378 41.0185 37.5419 40.7139L38.8037 37.6352C38.9154 37.3585 39.1255 37.1244 39.4034 36.9671C39.6814 36.8098 40.0127 36.7374 40.3494 36.7604L41.3068 36.8263C42.6412 36.9103 43.9655 37.1474 45.2463 37.5315L46.167 37.8018C46.4902 37.8967 46.7755 38.0789 46.9817 38.3221C47.1879 38.5653 47.3043 38.8568 47.314 39.1546L47.4041 42.2603C47.4243 42.9208 47.9718 43.4973 48.7097 43.6293L49.2111 43.638L51.963 43.2954L51.8935 43.1937L51.5794 42.6793C51.1284 41.9219 50.7802 41.1231 50.5424 40.3001L50.3952 39.7304C50.3193 39.4352 50.3482 39.1305 50.4779 38.8586C50.6076 38.5868 50.8317 38.3614 51.1189 38.2138L53.1643 37.177C53.3318 37.0408 53.5074 36.833 53.3305 36.5581L51.732 34.8406C51.5155 34.6018 51.3853 34.3126 51.3595 34.013C51.3338 33.7134 51.4137 33.4183 51.5882 33.1687L51.9277 32.6902C52.4278 31.9925 53.0284 31.3575 53.7151 30.8004L54.1895 30.419C54.4345 30.2148 54.7515 30.0899 55.0927 30.0632C55.4339 30.0365 55.7806 30.1094 56.0804 30.2709L58.1656 31.3578C58.292 31.425 58.4469 31.4365 58.5878 31.3969L58.933 31.0411L59.6681 29.1777C59.7831 28.9025 59.9932 28.6695 60.2696 28.5106C60.5459 28.3517 60.8749 28.2747 61.2114 28.2903L61.8656 28.3223C62.8358 28.3851 63.7726 28.5488 64.6759 28.8132L65.3027 28.9984C65.6341 29.0973 65.9262 29.2856 66.1369 29.5361C66.3475 29.7866 66.4658 30.0863 66.4746 30.3921L66.5217 32.5009C66.5242 32.5648 66.5424 32.6282 66.575 32.6865C66.6075 32.7449 66.6538 32.7968 66.7104 32.8387C66.7993 32.9105 66.9147 32.9501 67.0322 32.949L69.4631 32.6462C69.7935 32.6093 70.1334 32.6641 70.4364 32.8032C70.7394 32.9424 70.9907 33.159 71.156 33.4237L71.4746 33.9389C71.9384 34.7166 72.2826 35.5175 72.5074 36.3417L72.656 36.9035C72.7338 37.2001 72.7057 37.5067 72.5756 37.7801C72.4456 38.0536 72.2201 38.2801 71.9308 38.428L69.8817 39.46C69.7076 39.6073 69.5461 39.8135 69.7155 40.079L71.3088 41.7996C71.7572 42.2853 71.8132 42.9522 71.4547 43.4597ZM53.1238 48.4377C52.888 47.6385 52.5518 46.8614 52.1216 46.1215L49.8075 46.4168L49.794 46.4144C49.2556 46.4803 48.7045 46.4666 48.163 46.3738C47.9752 46.3402 44.2844 45.5862 44.2159 42.2046L44.1536 40.1296C43.2527 39.8826 42.3297 39.7174 41.399 39.6365L40.6266 41.554C40.5425 41.766 40.44 41.9693 40.319 42.1639C38.7435 44.5457 35.853 44.1418 35.4014 44.061C34.8946 43.9703 34.4052 43.8083 33.9331 43.5752L31.8651 42.4954C31.2127 43.0468 30.6286 43.6582 30.1217 44.3201L31.6575 45.9493C32.1077 46.4252 32.439 46.9781 32.6283 47.569C32.8176 48.1599 32.8602 48.7746 32.7532 49.3699C32.6462 49.9651 32.3922 50.5265 32.009 51.0146C31.6257 51.5027 31.1226 51.9057 30.5349 52.1952L28.5337 53.1913C28.772 53.9908 29.1046 54.7626 29.5314 55.5067L31.859 55.2138C32.1049 55.1818 32.3543 55.1682 32.6047 55.1729C32.9216 55.1729 33.235 55.2006 33.5451 55.2561C36.2772 55.7452 37.4442 57.8881 37.4425 59.4448L37.4839 61.5079C38.3848 61.7549 39.3078 61.9201 40.2384 62.001L41.0109 60.0836C41.0948 59.8709 41.1994 59.6658 41.3236 59.4705C42.917 57.0919 45.8113 57.5005 46.2629 57.5813C46.7757 57.6731 47.2653 57.8338 47.7319 58.0632L49.8006 59.1391L49.7931 59.1296C50.4514 58.5798 51.0311 57.9713 51.532 57.3041L49.9931 55.6662C49.5438 55.1912 49.213 54.6394 49.0241 54.0496C48.8351 53.4598 48.7926 52.8463 48.8994 52.2521C49.0062 51.658 49.2597 51.0977 49.6423 50.6105C50.0248 50.1233 50.527 49.7211 51.1137 49.4321L53.1238 48.4377ZM67.2378 37.6528C67.4991 37.3852 67.8062 37.1559 68.1487 36.9724L69.2085 36.4404C69.1085 36.1649 68.9922 35.8937 68.8601 35.628L67.3511 35.8079C66.3893 35.844 65.4316 35.5536 64.6721 34.9959C64.2482 34.6782 63.9041 34.285 63.664 33.8441C63.424 33.4032 63.2939 32.9253 63.283 32.4441L63.2618 31.4024C62.9485 31.3244 62.6301 31.2674 62.3093 31.2319L61.4431 33.0028C61.012 33.5108 60.4237 33.8956 59.7444 34.1138C59.2398 34.2651 58.6992 34.3166 58.1598 34.2649C57.6203 34.2131 57.0945 34.0592 56.6184 33.8137L55.5848 33.2718L55.2696 33.5885C55.2019 33.6574 55.1404 33.7262 55.0851 33.7946L55.0086 33.8864L54.9675 33.9358L55.9667 35.031C57.0906 36.7446 56.5537 38.1973 55.803 38.9874C55.5459 39.26 55.2364 39.4898 54.8876 39.6669L53.8317 40.2037C53.9282 40.4724 54.045 40.7392 54.1821 41.0044L55.6956 40.8252C56.6557 40.7952 57.6098 41.0861 58.3694 41.6404C58.7932 41.9623 59.1368 42.3592 59.3761 42.8033C59.6154 43.2473 59.7447 43.728 59.7551 44.2118L59.7791 45.2378C60.0888 45.3122 60.4078 45.3693 60.736 45.4091L61.6156 43.6406C62.04 43.128 62.6284 42.7419 63.3098 42.5288C63.8139 42.3748 64.3548 42.3218 64.8948 42.3737C65.4348 42.4255 65.9607 42.5809 66.4358 42.8289L67.4619 43.3613C67.6807 43.1545 67.886 42.9367 68.0771 42.7091L67.0779 41.6139L67.0689 41.6123C65.9533 39.9043 66.4872 38.4428 67.2378 37.6528ZM15.1732 52.3161L19.6449 53.1165L18.9416 57.0453L14.4699 56.2449C10.9121 55.608 7.72222 53.7554 5.6021 51.0947C3.48199 48.434 2.60528 45.1831 3.16484 42.0572L8.79105 10.6271C9.35061 7.50119 11.3006 4.7563 14.2121 2.99629C17.1235 1.23627 20.7579 0.605306 24.3158 1.24219L60.0889 7.64583C63.6468 8.28272 66.8366 10.1353 68.9568 12.796C71.0769 15.4567 71.9536 18.7076 71.394 21.8335L70.6908 25.7623L12.5594 15.3563L7.63648 42.8577C7.26344 44.9416 7.84791 47.1089 9.26132 48.8827C10.6747 50.6565 12.8013 51.8915 15.1732 52.3161ZM13.2627 11.4276L66.9224 21.033C67.2954 18.9491 66.711 16.7818 65.2975 15.008C63.8841 13.2342 61.7576 11.9992 59.3857 11.5746L23.6125 5.17095C21.2406 4.74636 18.8177 5.16701 16.8767 6.34035C14.9357 7.51369 13.6357 9.34362 13.2627 11.4276Z"
+                      fill="#4161CB" />
+                  </svg>
+                </div>
 
-      <!-- Accordion Item -->
-      <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
-        <button data-accordion="4" class="accordion-btn w-full flex justify-between items-center py-4 text-left">
-          <span class="text-base md:text-lg font-medium text-gray-800">Application Modernization</span>
-        </button>
-        <div id="answer-4"
-          class="accordion-content max-h-0 overflow-hidden transition-all ease-in-out md:group-hover:max-h-40 md:group-hover:pb-4 text-gray-600 text-sm md:text-base">
-          You can reach out to us via our contact page, and our team will get back to you with a tailored proposal.
-        </div>
-      </div>
+                <h3
+                  class="font-primary text-lg sm:text-xl group-hover:text-2xl font-semibold leading-tight text-title-col mt-1 sm:mt-5 md:mt-10 group-hover:mt-5 transition-all duration-150">
+                  Clear and</br>Transparent Process
+                </h3>
+                <p
+                  class="font-secondary mt-2 sm:mt-4 group-hover:mt-6 text-sm leading-snug text-slate-500 group-hover:text-lg transition-all duration-150">
+                  We follow a structured approach with defined milestones and full visibility throughout the project.
+                </p>
 
-      <!-- Accordion Item -->
-      <div class="border border-gray-200 rounded-2xl px-4 my-4 group">
-        <button data-accordion="5" class="accordion-btn w-full flex justify-between items-center py-4 text-left">
-          <span class="text-base md:text-lg font-medium text-gray-800">Business Automations</span>
-        </button>
-        <div id="answer-5"
-          class="accordion-content max-h-0 overflow-hidden transition-all ease-in-out md:group-hover:max-h-40 md:group-hover:pb-4 text-gray-600 text-sm md:text-base">
-          You can reach out to us via our contact page, and our team will get back to you with a tailored proposal.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group sm:translate-y-10 lg:translate-y-12 inline-block transition-all duration-250">
+          <div class="relative">
+            <!-- Glow -->
+            <div class="trust-glowbox">
+            </div>
+            <!-- Gradient border -->
+            <div class="trust-gradient-border">
+              <!-- Inner content -->
+              <div class="trust-content-box">
+                <!-- Icon -->
+                <div class="absolute right-4 top-4">
+                  <svg viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 group-hover:translate-y-[-1.55em] group-hover:scale-150 transition-all duration-200 not-group-hover:rotate-[-10.15deg]">
+                    <path
+                      d="M45.2945 51.622C45.108 52.664 44.458 53.5789 43.4875 54.1656C42.517 54.7523 41.3055 54.9626 40.1196 54.7503C38.9336 54.538 37.8703 53.9205 37.1636 53.0336C36.4569 52.1467 36.1647 51.063 36.3512 50.0211C36.5377 48.9791 37.1877 48.0641 38.1582 47.4775C39.1287 46.8908 40.3402 46.6805 41.5261 46.8928C42.7121 47.1051 43.7754 47.7226 44.4821 48.6095C45.1888 49.4964 45.481 50.58 45.2945 51.622ZM61.8735 36.3479C61.2805 36.2417 60.6747 36.3469 60.1895 36.6402C59.7043 36.9335 59.3793 37.391 59.286 37.912C59.1927 38.433 59.3389 38.9748 59.6922 39.4183C60.0456 39.8617 60.5772 40.1705 61.1702 40.2766C61.7632 40.3828 62.3689 40.2776 62.8541 39.9843C63.3394 39.6909 63.6644 39.2334 63.7576 38.7125C63.8509 38.1915 63.7048 37.6497 63.3514 37.2062C62.9981 36.7628 62.4664 36.454 61.8735 36.3479ZM71.4547 43.4597L71.1197 43.939C70.6169 44.6395 70.0128 45.2766 69.322 45.8351L68.8683 46.204C68.6201 46.4032 68.3036 46.5251 67.964 46.5524C67.6244 46.5797 67.2789 46.5109 66.9766 46.3559L64.899 45.2785C64.8343 45.2469 64.7636 45.2268 64.6912 45.2194C64.6188 45.212 64.5462 45.2175 64.4775 45.2355L64.116 45.6047L63.3779 47.4593C63.2924 47.6613 63.1552 47.8413 62.9766 47.9857C62.798 48.13 62.5828 48.235 62.3473 48.2925C61.9605 48.3394 61.5662 48.341 61.1743 48.2974C60.2247 48.2382 59.2821 48.0735 58.3684 47.8074L57.7461 47.623C57.4144 47.5265 57.1218 47.3394 56.9114 47.0892C56.7011 46.8391 56.5841 46.5393 56.578 46.234L56.5264 44.1244C56.5255 44.0607 56.5091 43.9973 56.4782 43.9386C56.4472 43.8798 56.4026 43.8272 56.3473 43.7842C56.2524 43.7131 56.1439 43.6748 56.0218 43.6692L54.3034 43.8846L54.3691 43.9815L54.8292 44.737C55.4661 45.8025 55.947 46.9144 56.2719 48.0727L56.5052 48.9092C56.5497 49.0919 56.5584 49.2787 56.531 49.4612C56.4107 50.133 55.7887 50.4109 55.7887 50.4109L52.7847 51.9045C52.6115 51.9905 52.4606 52.1067 52.3408 52.2464C52.221 52.3862 52.1347 52.5468 52.0867 52.719C52.0387 52.8912 52.0301 53.0717 52.0612 53.25C52.0924 53.4284 52.1627 53.6011 52.2683 53.7583L52.2669 53.7662L54.7035 56.3959C54.5328 56.645 54.4556 56.9383 54.4825 57.2356C54.5094 57.533 54.6391 57.8198 54.8539 58.0569L54.3508 58.7534C53.6498 59.7273 52.809 60.6135 51.848 61.391L51.1641 61.9376C50.9219 62.1317 50.6132 62.2501 50.282 62.276C49.9508 62.302 49.614 62.234 49.32 62.0819L46.2028 60.4696C45.8407 60.2885 45.4198 60.235 45.028 60.3205C44.6361 60.406 44.3034 60.6237 44.0993 60.9284L42.833 64.0062C42.7217 64.2825 42.5124 64.5162 42.2353 64.6736C41.9583 64.831 41.6278 64.904 41.2918 64.8819L40.3345 64.8159C39.6852 64.7777 39.0378 64.6984 38.3972 64.5786L38.3167 64.5642C37.6689 64.4437 37.0273 64.2923 36.395 64.1107L35.4921 63.8437C35.1707 63.7498 34.8864 63.5696 34.68 63.3287C34.4736 63.0879 34.3557 62.7987 34.343 62.5027L34.2529 59.3969C34.2452 59.0756 34.1094 58.7619 33.8697 58.5112C33.63 58.2606 33.3018 58.0891 32.9429 58.0271L32.4146 58.0136L28.9568 58.4326C28.6275 58.4741 28.2871 58.4214 27.9845 58.282C27.6819 58.1426 27.4328 57.9237 27.2728 57.6568L26.821 56.9069C26.183 55.8441 25.6957 54.7201 25.3707 53.5617L25.1412 52.73C25.0641 52.4369 25.0918 52.1339 25.2205 51.8638C25.3491 51.5936 25.5723 51.3699 25.8584 51.2243L28.8624 49.7307C29.4886 49.4292 29.5826 48.8784 29.5953 48.8077C29.6528 48.4916 29.5809 48.1626 29.3923 47.8793L26.9563 45.2456C26.9563 45.2456 26.4693 44.7692 26.5896 44.0974C26.6229 43.9114 26.695 43.7405 26.806 43.5847L27.3091 42.8881C28.0067 41.9129 28.8332 41.0336 29.7887 40.2505L30.4727 39.7039C30.7166 39.5068 31.0288 39.3867 31.3637 39.3614C31.6987 39.336 32.0389 39.4066 32.3347 39.5628L35.4385 41.1726C35.8006 41.3538 36.2214 41.4072 36.6133 41.3218C37.0051 41.2363 37.3378 41.0185 37.5419 40.7139L38.8037 37.6352C38.9154 37.3585 39.1255 37.1244 39.4034 36.9671C39.6814 36.8098 40.0127 36.7374 40.3494 36.7604L41.3068 36.8263C42.6412 36.9103 43.9655 37.1474 45.2463 37.5315L46.167 37.8018C46.4902 37.8967 46.7755 38.0789 46.9817 38.3221C47.1879 38.5653 47.3043 38.8568 47.314 39.1546L47.4041 42.2603C47.4243 42.9208 47.9718 43.4973 48.7097 43.6293L49.2111 43.638L51.963 43.2954L51.8935 43.1937L51.5794 42.6793C51.1284 41.9219 50.7802 41.1231 50.5424 40.3001L50.3952 39.7304C50.3193 39.4352 50.3482 39.1305 50.4779 38.8586C50.6076 38.5868 50.8317 38.3614 51.1189 38.2138L53.1643 37.177C53.3318 37.0408 53.5074 36.833 53.3305 36.5581L51.732 34.8406C51.5155 34.6018 51.3853 34.3126 51.3595 34.013C51.3338 33.7134 51.4137 33.4183 51.5882 33.1687L51.9277 32.6902C52.4278 31.9925 53.0284 31.3575 53.7151 30.8004L54.1895 30.419C54.4345 30.2148 54.7515 30.0899 55.0927 30.0632C55.4339 30.0365 55.7806 30.1094 56.0804 30.2709L58.1656 31.3578C58.292 31.425 58.4469 31.4365 58.5878 31.3969L58.933 31.0411L59.6681 29.1777C59.7831 28.9025 59.9932 28.6695 60.2696 28.5106C60.5459 28.3517 60.8749 28.2747 61.2114 28.2903L61.8656 28.3223C62.8358 28.3851 63.7726 28.5488 64.6759 28.8132L65.3027 28.9984C65.6341 29.0973 65.9262 29.2856 66.1369 29.5361C66.3475 29.7866 66.4658 30.0863 66.4746 30.3921L66.5217 32.5009C66.5242 32.5648 66.5424 32.6282 66.575 32.6865C66.6075 32.7449 66.6538 32.7968 66.7104 32.8387C66.7993 32.9105 66.9147 32.9501 67.0322 32.949L69.4631 32.6462C69.7935 32.6093 70.1334 32.6641 70.4364 32.8032C70.7394 32.9424 70.9907 33.159 71.156 33.4237L71.4746 33.9389C71.9384 34.7166 72.2826 35.5175 72.5074 36.3417L72.656 36.9035C72.7338 37.2001 72.7057 37.5067 72.5756 37.7801C72.4456 38.0536 72.2201 38.2801 71.9308 38.428L69.8817 39.46C69.7076 39.6073 69.5461 39.8135 69.7155 40.079L71.3088 41.7996C71.7572 42.2853 71.8132 42.9522 71.4547 43.4597ZM53.1238 48.4377C52.888 47.6385 52.5518 46.8614 52.1216 46.1215L49.8075 46.4168L49.794 46.4144C49.2556 46.4803 48.7045 46.4666 48.163 46.3738C47.9752 46.3402 44.2844 45.5862 44.2159 42.2046L44.1536 40.1296C43.2527 39.8826 42.3297 39.7174 41.399 39.6365L40.6266 41.554C40.5425 41.766 40.44 41.9693 40.319 42.1639C38.7435 44.5457 35.853 44.1418 35.4014 44.061C34.8946 43.9703 34.4052 43.8083 33.9331 43.5752L31.8651 42.4954C31.2127 43.0468 30.6286 43.6582 30.1217 44.3201L31.6575 45.9493C32.1077 46.4252 32.439 46.9781 32.6283 47.569C32.8176 48.1599 32.8602 48.7746 32.7532 49.3699C32.6462 49.9651 32.3922 50.5265 32.009 51.0146C31.6257 51.5027 31.1226 51.9057 30.5349 52.1952L28.5337 53.1913C28.772 53.9908 29.1046 54.7626 29.5314 55.5067L31.859 55.2138C32.1049 55.1818 32.3543 55.1682 32.6047 55.1729C32.9216 55.1729 33.235 55.2006 33.5451 55.2561C36.2772 55.7452 37.4442 57.8881 37.4425 59.4448L37.4839 61.5079C38.3848 61.7549 39.3078 61.9201 40.2384 62.001L41.0109 60.0836C41.0948 59.8709 41.1994 59.6658 41.3236 59.4705C42.917 57.0919 45.8113 57.5005 46.2629 57.5813C46.7757 57.6731 47.2653 57.8338 47.7319 58.0632L49.8006 59.1391L49.7931 59.1296C50.4514 58.5798 51.0311 57.9713 51.532 57.3041L49.9931 55.6662C49.5438 55.1912 49.213 54.6394 49.0241 54.0496C48.8351 53.4598 48.7926 52.8463 48.8994 52.2521C49.0062 51.658 49.2597 51.0977 49.6423 50.6105C50.0248 50.1233 50.527 49.7211 51.1137 49.4321L53.1238 48.4377ZM67.2378 37.6528C67.4991 37.3852 67.8062 37.1559 68.1487 36.9724L69.2085 36.4404C69.1085 36.1649 68.9922 35.8937 68.8601 35.628L67.3511 35.8079C66.3893 35.844 65.4316 35.5536 64.6721 34.9959C64.2482 34.6782 63.9041 34.285 63.664 33.8441C63.424 33.4032 63.2939 32.9253 63.283 32.4441L63.2618 31.4024C62.9485 31.3244 62.6301 31.2674 62.3093 31.2319L61.4431 33.0028C61.012 33.5108 60.4237 33.8956 59.7444 34.1138C59.2398 34.2651 58.6992 34.3166 58.1598 34.2649C57.6203 34.2131 57.0945 34.0592 56.6184 33.8137L55.5848 33.2718L55.2696 33.5885C55.2019 33.6574 55.1404 33.7262 55.0851 33.7946L55.0086 33.8864L54.9675 33.9358L55.9667 35.031C57.0906 36.7446 56.5537 38.1973 55.803 38.9874C55.5459 39.26 55.2364 39.4898 54.8876 39.6669L53.8317 40.2037C53.9282 40.4724 54.045 40.7392 54.1821 41.0044L55.6956 40.8252C56.6557 40.7952 57.6098 41.0861 58.3694 41.6404C58.7932 41.9623 59.1368 42.3592 59.3761 42.8033C59.6154 43.2473 59.7447 43.728 59.7551 44.2118L59.7791 45.2378C60.0888 45.3122 60.4078 45.3693 60.736 45.4091L61.6156 43.6406C62.04 43.128 62.6284 42.7419 63.3098 42.5288C63.8139 42.3748 64.3548 42.3218 64.8948 42.3737C65.4348 42.4255 65.9607 42.5809 66.4358 42.8289L67.4619 43.3613C67.6807 43.1545 67.886 42.9367 68.0771 42.7091L67.0779 41.6139L67.0689 41.6123C65.9533 39.9043 66.4872 38.4428 67.2378 37.6528ZM15.1732 52.3161L19.6449 53.1165L18.9416 57.0453L14.4699 56.2449C10.9121 55.608 7.72222 53.7554 5.6021 51.0947C3.48199 48.434 2.60528 45.1831 3.16484 42.0572L8.79105 10.6271C9.35061 7.50119 11.3006 4.7563 14.2121 2.99629C17.1235 1.23627 20.7579 0.605306 24.3158 1.24219L60.0889 7.64583C63.6468 8.28272 66.8366 10.1353 68.9568 12.796C71.0769 15.4567 71.9536 18.7076 71.394 21.8335L70.6908 25.7623L12.5594 15.3563L7.63648 42.8577C7.26344 44.9416 7.84791 47.1089 9.26132 48.8827C10.6747 50.6565 12.8013 51.8915 15.1732 52.3161ZM13.2627 11.4276L66.9224 21.033C67.2954 18.9491 66.711 16.7818 65.2975 15.008C63.8841 13.2342 61.7576 11.9992 59.3857 11.5746L23.6125 5.17095C21.2406 4.74636 18.8177 5.16701 16.8767 6.34035C14.9357 7.51369 13.6357 9.34362 13.2627 11.4276Z"
+                      fill="#4161CB" />
+                  </svg>
+                </div>
+                <h3
+                  class="font-primary text-lg sm:text-xl group-hover:text-2xl font-semibold leading-tight text-title-col mt-1 sm:mt-5 md:mt-10 group-hover:mt-5 transition-all duration-150">
+                  Business-First</br>Solutions
+                </h3>
+                <p
+                  class="font-secondary mt-2 sm:mt-4 group-hover:mt-6 text-sm leading-snug text-slate-500 group-hover:text-lg transition-all duration-150">
+                  Every solution is designed around real business challenges, not just technical requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group lg:translate-y-21 inline-block transition-all duration-250">
+          <div class="relative">
+            <!-- Glow -->
+            <div class="trust-glowbox">
+            </div>
+            <!-- Gradient border -->
+            <div class="trust-gradient-border">
+              <!-- Inner content -->
+              <div class="trust-content-box">
+                <!-- Icon -->
+                <div class="absolute right-4 top-4">
+                  <svg viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 group-hover:translate-y-[-1.55em] group-hover:scale-150 transition-all duration-200 not-group-hover:rotate-[-10.15deg]">
+                    <path
+                      d="M45.2945 51.622C45.108 52.664 44.458 53.5789 43.4875 54.1656C42.517 54.7523 41.3055 54.9626 40.1196 54.7503C38.9336 54.538 37.8703 53.9205 37.1636 53.0336C36.4569 52.1467 36.1647 51.063 36.3512 50.0211C36.5377 48.9791 37.1877 48.0641 38.1582 47.4775C39.1287 46.8908 40.3402 46.6805 41.5261 46.8928C42.7121 47.1051 43.7754 47.7226 44.4821 48.6095C45.1888 49.4964 45.481 50.58 45.2945 51.622ZM61.8735 36.3479C61.2805 36.2417 60.6747 36.3469 60.1895 36.6402C59.7043 36.9335 59.3793 37.391 59.286 37.912C59.1927 38.433 59.3389 38.9748 59.6922 39.4183C60.0456 39.8617 60.5772 40.1705 61.1702 40.2766C61.7632 40.3828 62.3689 40.2776 62.8541 39.9843C63.3394 39.6909 63.6644 39.2334 63.7576 38.7125C63.8509 38.1915 63.7048 37.6497 63.3514 37.2062C62.9981 36.7628 62.4664 36.454 61.8735 36.3479ZM71.4547 43.4597L71.1197 43.939C70.6169 44.6395 70.0128 45.2766 69.322 45.8351L68.8683 46.204C68.6201 46.4032 68.3036 46.5251 67.964 46.5524C67.6244 46.5797 67.2789 46.5109 66.9766 46.3559L64.899 45.2785C64.8343 45.2469 64.7636 45.2268 64.6912 45.2194C64.6188 45.212 64.5462 45.2175 64.4775 45.2355L64.116 45.6047L63.3779 47.4593C63.2924 47.6613 63.1552 47.8413 62.9766 47.9857C62.798 48.13 62.5828 48.235 62.3473 48.2925C61.9605 48.3394 61.5662 48.341 61.1743 48.2974C60.2247 48.2382 59.2821 48.0735 58.3684 47.8074L57.7461 47.623C57.4144 47.5265 57.1218 47.3394 56.9114 47.0892C56.7011 46.8391 56.5841 46.5393 56.578 46.234L56.5264 44.1244C56.5255 44.0607 56.5091 43.9973 56.4782 43.9386C56.4472 43.8798 56.4026 43.8272 56.3473 43.7842C56.2524 43.7131 56.1439 43.6748 56.0218 43.6692L54.3034 43.8846L54.3691 43.9815L54.8292 44.737C55.4661 45.8025 55.947 46.9144 56.2719 48.0727L56.5052 48.9092C56.5497 49.0919 56.5584 49.2787 56.531 49.4612C56.4107 50.133 55.7887 50.4109 55.7887 50.4109L52.7847 51.9045C52.6115 51.9905 52.4606 52.1067 52.3408 52.2464C52.221 52.3862 52.1347 52.5468 52.0867 52.719C52.0387 52.8912 52.0301 53.0717 52.0612 53.25C52.0924 53.4284 52.1627 53.6011 52.2683 53.7583L52.2669 53.7662L54.7035 56.3959C54.5328 56.645 54.4556 56.9383 54.4825 57.2356C54.5094 57.533 54.6391 57.8198 54.8539 58.0569L54.3508 58.7534C53.6498 59.7273 52.809 60.6135 51.848 61.391L51.1641 61.9376C50.9219 62.1317 50.6132 62.2501 50.282 62.276C49.9508 62.302 49.614 62.234 49.32 62.0819L46.2028 60.4696C45.8407 60.2885 45.4198 60.235 45.028 60.3205C44.6361 60.406 44.3034 60.6237 44.0993 60.9284L42.833 64.0062C42.7217 64.2825 42.5124 64.5162 42.2353 64.6736C41.9583 64.831 41.6278 64.904 41.2918 64.8819L40.3345 64.8159C39.6852 64.7777 39.0378 64.6984 38.3972 64.5786L38.3167 64.5642C37.6689 64.4437 37.0273 64.2923 36.395 64.1107L35.4921 63.8437C35.1707 63.7498 34.8864 63.5696 34.68 63.3287C34.4736 63.0879 34.3557 62.7987 34.343 62.5027L34.2529 59.3969C34.2452 59.0756 34.1094 58.7619 33.8697 58.5112C33.63 58.2606 33.3018 58.0891 32.9429 58.0271L32.4146 58.0136L28.9568 58.4326C28.6275 58.4741 28.2871 58.4214 27.9845 58.282C27.6819 58.1426 27.4328 57.9237 27.2728 57.6568L26.821 56.9069C26.183 55.8441 25.6957 54.7201 25.3707 53.5617L25.1412 52.73C25.0641 52.4369 25.0918 52.1339 25.2205 51.8638C25.3491 51.5936 25.5723 51.3699 25.8584 51.2243L28.8624 49.7307C29.4886 49.4292 29.5826 48.8784 29.5953 48.8077C29.6528 48.4916 29.5809 48.1626 29.3923 47.8793L26.9563 45.2456C26.9563 45.2456 26.4693 44.7692 26.5896 44.0974C26.6229 43.9114 26.695 43.7405 26.806 43.5847L27.3091 42.8881C28.0067 41.9129 28.8332 41.0336 29.7887 40.2505L30.4727 39.7039C30.7166 39.5068 31.0288 39.3867 31.3637 39.3614C31.6987 39.336 32.0389 39.4066 32.3347 39.5628L35.4385 41.1726C35.8006 41.3538 36.2214 41.4072 36.6133 41.3218C37.0051 41.2363 37.3378 41.0185 37.5419 40.7139L38.8037 37.6352C38.9154 37.3585 39.1255 37.1244 39.4034 36.9671C39.6814 36.8098 40.0127 36.7374 40.3494 36.7604L41.3068 36.8263C42.6412 36.9103 43.9655 37.1474 45.2463 37.5315L46.167 37.8018C46.4902 37.8967 46.7755 38.0789 46.9817 38.3221C47.1879 38.5653 47.3043 38.8568 47.314 39.1546L47.4041 42.2603C47.4243 42.9208 47.9718 43.4973 48.7097 43.6293L49.2111 43.638L51.963 43.2954L51.8935 43.1937L51.5794 42.6793C51.1284 41.9219 50.7802 41.1231 50.5424 40.3001L50.3952 39.7304C50.3193 39.4352 50.3482 39.1305 50.4779 38.8586C50.6076 38.5868 50.8317 38.3614 51.1189 38.2138L53.1643 37.177C53.3318 37.0408 53.5074 36.833 53.3305 36.5581L51.732 34.8406C51.5155 34.6018 51.3853 34.3126 51.3595 34.013C51.3338 33.7134 51.4137 33.4183 51.5882 33.1687L51.9277 32.6902C52.4278 31.9925 53.0284 31.3575 53.7151 30.8004L54.1895 30.419C54.4345 30.2148 54.7515 30.0899 55.0927 30.0632C55.4339 30.0365 55.7806 30.1094 56.0804 30.2709L58.1656 31.3578C58.292 31.425 58.4469 31.4365 58.5878 31.3969L58.933 31.0411L59.6681 29.1777C59.7831 28.9025 59.9932 28.6695 60.2696 28.5106C60.5459 28.3517 60.8749 28.2747 61.2114 28.2903L61.8656 28.3223C62.8358 28.3851 63.7726 28.5488 64.6759 28.8132L65.3027 28.9984C65.6341 29.0973 65.9262 29.2856 66.1369 29.5361C66.3475 29.7866 66.4658 30.0863 66.4746 30.3921L66.5217 32.5009C66.5242 32.5648 66.5424 32.6282 66.575 32.6865C66.6075 32.7449 66.6538 32.7968 66.7104 32.8387C66.7993 32.9105 66.9147 32.9501 67.0322 32.949L69.4631 32.6462C69.7935 32.6093 70.1334 32.6641 70.4364 32.8032C70.7394 32.9424 70.9907 33.159 71.156 33.4237L71.4746 33.9389C71.9384 34.7166 72.2826 35.5175 72.5074 36.3417L72.656 36.9035C72.7338 37.2001 72.7057 37.5067 72.5756 37.7801C72.4456 38.0536 72.2201 38.2801 71.9308 38.428L69.8817 39.46C69.7076 39.6073 69.5461 39.8135 69.7155 40.079L71.3088 41.7996C71.7572 42.2853 71.8132 42.9522 71.4547 43.4597ZM53.1238 48.4377C52.888 47.6385 52.5518 46.8614 52.1216 46.1215L49.8075 46.4168L49.794 46.4144C49.2556 46.4803 48.7045 46.4666 48.163 46.3738C47.9752 46.3402 44.2844 45.5862 44.2159 42.2046L44.1536 40.1296C43.2527 39.8826 42.3297 39.7174 41.399 39.6365L40.6266 41.554C40.5425 41.766 40.44 41.9693 40.319 42.1639C38.7435 44.5457 35.853 44.1418 35.4014 44.061C34.8946 43.9703 34.4052 43.8083 33.9331 43.5752L31.8651 42.4954C31.2127 43.0468 30.6286 43.6582 30.1217 44.3201L31.6575 45.9493C32.1077 46.4252 32.439 46.9781 32.6283 47.569C32.8176 48.1599 32.8602 48.7746 32.7532 49.3699C32.6462 49.9651 32.3922 50.5265 32.009 51.0146C31.6257 51.5027 31.1226 51.9057 30.5349 52.1952L28.5337 53.1913C28.772 53.9908 29.1046 54.7626 29.5314 55.5067L31.859 55.2138C32.1049 55.1818 32.3543 55.1682 32.6047 55.1729C32.9216 55.1729 33.235 55.2006 33.5451 55.2561C36.2772 55.7452 37.4442 57.8881 37.4425 59.4448L37.4839 61.5079C38.3848 61.7549 39.3078 61.9201 40.2384 62.001L41.0109 60.0836C41.0948 59.8709 41.1994 59.6658 41.3236 59.4705C42.917 57.0919 45.8113 57.5005 46.2629 57.5813C46.7757 57.6731 47.2653 57.8338 47.7319 58.0632L49.8006 59.1391L49.7931 59.1296C50.4514 58.5798 51.0311 57.9713 51.532 57.3041L49.9931 55.6662C49.5438 55.1912 49.213 54.6394 49.0241 54.0496C48.8351 53.4598 48.7926 52.8463 48.8994 52.2521C49.0062 51.658 49.2597 51.0977 49.6423 50.6105C50.0248 50.1233 50.527 49.7211 51.1137 49.4321L53.1238 48.4377ZM67.2378 37.6528C67.4991 37.3852 67.8062 37.1559 68.1487 36.9724L69.2085 36.4404C69.1085 36.1649 68.9922 35.8937 68.8601 35.628L67.3511 35.8079C66.3893 35.844 65.4316 35.5536 64.6721 34.9959C64.2482 34.6782 63.9041 34.285 63.664 33.8441C63.424 33.4032 63.2939 32.9253 63.283 32.4441L63.2618 31.4024C62.9485 31.3244 62.6301 31.2674 62.3093 31.2319L61.4431 33.0028C61.012 33.5108 60.4237 33.8956 59.7444 34.1138C59.2398 34.2651 58.6992 34.3166 58.1598 34.2649C57.6203 34.2131 57.0945 34.0592 56.6184 33.8137L55.5848 33.2718L55.2696 33.5885C55.2019 33.6574 55.1404 33.7262 55.0851 33.7946L55.0086 33.8864L54.9675 33.9358L55.9667 35.031C57.0906 36.7446 56.5537 38.1973 55.803 38.9874C55.5459 39.26 55.2364 39.4898 54.8876 39.6669L53.8317 40.2037C53.9282 40.4724 54.045 40.7392 54.1821 41.0044L55.6956 40.8252C56.6557 40.7952 57.6098 41.0861 58.3694 41.6404C58.7932 41.9623 59.1368 42.3592 59.3761 42.8033C59.6154 43.2473 59.7447 43.728 59.7551 44.2118L59.7791 45.2378C60.0888 45.3122 60.4078 45.3693 60.736 45.4091L61.6156 43.6406C62.04 43.128 62.6284 42.7419 63.3098 42.5288C63.8139 42.3748 64.3548 42.3218 64.8948 42.3737C65.4348 42.4255 65.9607 42.5809 66.4358 42.8289L67.4619 43.3613C67.6807 43.1545 67.886 42.9367 68.0771 42.7091L67.0779 41.6139L67.0689 41.6123C65.9533 39.9043 66.4872 38.4428 67.2378 37.6528ZM15.1732 52.3161L19.6449 53.1165L18.9416 57.0453L14.4699 56.2449C10.9121 55.608 7.72222 53.7554 5.6021 51.0947C3.48199 48.434 2.60528 45.1831 3.16484 42.0572L8.79105 10.6271C9.35061 7.50119 11.3006 4.7563 14.2121 2.99629C17.1235 1.23627 20.7579 0.605306 24.3158 1.24219L60.0889 7.64583C63.6468 8.28272 66.8366 10.1353 68.9568 12.796C71.0769 15.4567 71.9536 18.7076 71.394 21.8335L70.6908 25.7623L12.5594 15.3563L7.63648 42.8577C7.26344 44.9416 7.84791 47.1089 9.26132 48.8827C10.6747 50.6565 12.8013 51.8915 15.1732 52.3161ZM13.2627 11.4276L66.9224 21.033C67.2954 18.9491 66.711 16.7818 65.2975 15.008C63.8841 13.2342 61.7576 11.9992 59.3857 11.5746L23.6125 5.17095C21.2406 4.74636 18.8177 5.16701 16.8767 6.34035C14.9357 7.51369 13.6357 9.34362 13.2627 11.4276Z"
+                      fill="#4161CB" />
+                  </svg>
+                </div>
+                <h3
+                  class="font-primary text-lg sm:text-xl group-hover:text-2xl font-semibold leading-tight text-title-col mt-1 sm:mt-5 md:mt-10 group-hover:mt-5 transition-all duration-150">
+                  Clear Communication,</br>Consistent Delivery
+                </h3>
+                <p
+                  class="font-secondary mt-2 sm:mt-4 group-hover:mt-6 text-sm leading-snug text-slate-500 group-hover:text-lg transition-all duration-150">
+                  Open communication, realistic timelines, and no hidden surprises at any stage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group sm:translate-y-10 lg:translate-0 inline-block transition-all duration-250">
+          <div class="relative">
+            <!-- Glow -->
+            <div class="trust-glowbox">
+            </div>
+            <!-- Gradient border -->
+            <div class="trust-gradient-border">
+              <!-- Inner content -->
+              <div class="trust-content-box">
+                <!-- Icon -->
+                <div class="absolute right-4 top-4">
+                  <svg viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 group-hover:translate-y-[-1.55em] group-hover:scale-150 transition-all duration-150 not-group-hover:rotate-[-10.15deg]">
+                    <path
+                      d="M45.2945 51.622C45.108 52.664 44.458 53.5789 43.4875 54.1656C42.517 54.7523 41.3055 54.9626 40.1196 54.7503C38.9336 54.538 37.8703 53.9205 37.1636 53.0336C36.4569 52.1467 36.1647 51.063 36.3512 50.0211C36.5377 48.9791 37.1877 48.0641 38.1582 47.4775C39.1287 46.8908 40.3402 46.6805 41.5261 46.8928C42.7121 47.1051 43.7754 47.7226 44.4821 48.6095C45.1888 49.4964 45.481 50.58 45.2945 51.622ZM61.8735 36.3479C61.2805 36.2417 60.6747 36.3469 60.1895 36.6402C59.7043 36.9335 59.3793 37.391 59.286 37.912C59.1927 38.433 59.3389 38.9748 59.6922 39.4183C60.0456 39.8617 60.5772 40.1705 61.1702 40.2766C61.7632 40.3828 62.3689 40.2776 62.8541 39.9843C63.3394 39.6909 63.6644 39.2334 63.7576 38.7125C63.8509 38.1915 63.7048 37.6497 63.3514 37.2062C62.9981 36.7628 62.4664 36.454 61.8735 36.3479ZM71.4547 43.4597L71.1197 43.939C70.6169 44.6395 70.0128 45.2766 69.322 45.8351L68.8683 46.204C68.6201 46.4032 68.3036 46.5251 67.964 46.5524C67.6244 46.5797 67.2789 46.5109 66.9766 46.3559L64.899 45.2785C64.8343 45.2469 64.7636 45.2268 64.6912 45.2194C64.6188 45.212 64.5462 45.2175 64.4775 45.2355L64.116 45.6047L63.3779 47.4593C63.2924 47.6613 63.1552 47.8413 62.9766 47.9857C62.798 48.13 62.5828 48.235 62.3473 48.2925C61.9605 48.3394 61.5662 48.341 61.1743 48.2974C60.2247 48.2382 59.2821 48.0735 58.3684 47.8074L57.7461 47.623C57.4144 47.5265 57.1218 47.3394 56.9114 47.0892C56.7011 46.8391 56.5841 46.5393 56.578 46.234L56.5264 44.1244C56.5255 44.0607 56.5091 43.9973 56.4782 43.9386C56.4472 43.8798 56.4026 43.8272 56.3473 43.7842C56.2524 43.7131 56.1439 43.6748 56.0218 43.6692L54.3034 43.8846L54.3691 43.9815L54.8292 44.737C55.4661 45.8025 55.947 46.9144 56.2719 48.0727L56.5052 48.9092C56.5497 49.0919 56.5584 49.2787 56.531 49.4612C56.4107 50.133 55.7887 50.4109 55.7887 50.4109L52.7847 51.9045C52.6115 51.9905 52.4606 52.1067 52.3408 52.2464C52.221 52.3862 52.1347 52.5468 52.0867 52.719C52.0387 52.8912 52.0301 53.0717 52.0612 53.25C52.0924 53.4284 52.1627 53.6011 52.2683 53.7583L52.2669 53.7662L54.7035 56.3959C54.5328 56.645 54.4556 56.9383 54.4825 57.2356C54.5094 57.533 54.6391 57.8198 54.8539 58.0569L54.3508 58.7534C53.6498 59.7273 52.809 60.6135 51.848 61.391L51.1641 61.9376C50.9219 62.1317 50.6132 62.2501 50.282 62.276C49.9508 62.302 49.614 62.234 49.32 62.0819L46.2028 60.4696C45.8407 60.2885 45.4198 60.235 45.028 60.3205C44.6361 60.406 44.3034 60.6237 44.0993 60.9284L42.833 64.0062C42.7217 64.2825 42.5124 64.5162 42.2353 64.6736C41.9583 64.831 41.6278 64.904 41.2918 64.8819L40.3345 64.8159C39.6852 64.7777 39.0378 64.6984 38.3972 64.5786L38.3167 64.5642C37.6689 64.4437 37.0273 64.2923 36.395 64.1107L35.4921 63.8437C35.1707 63.7498 34.8864 63.5696 34.68 63.3287C34.4736 63.0879 34.3557 62.7987 34.343 62.5027L34.2529 59.3969C34.2452 59.0756 34.1094 58.7619 33.8697 58.5112C33.63 58.2606 33.3018 58.0891 32.9429 58.0271L32.4146 58.0136L28.9568 58.4326C28.6275 58.4741 28.2871 58.4214 27.9845 58.282C27.6819 58.1426 27.4328 57.9237 27.2728 57.6568L26.821 56.9069C26.183 55.8441 25.6957 54.7201 25.3707 53.5617L25.1412 52.73C25.0641 52.4369 25.0918 52.1339 25.2205 51.8638C25.3491 51.5936 25.5723 51.3699 25.8584 51.2243L28.8624 49.7307C29.4886 49.4292 29.5826 48.8784 29.5953 48.8077C29.6528 48.4916 29.5809 48.1626 29.3923 47.8793L26.9563 45.2456C26.9563 45.2456 26.4693 44.7692 26.5896 44.0974C26.6229 43.9114 26.695 43.7405 26.806 43.5847L27.3091 42.8881C28.0067 41.9129 28.8332 41.0336 29.7887 40.2505L30.4727 39.7039C30.7166 39.5068 31.0288 39.3867 31.3637 39.3614C31.6987 39.336 32.0389 39.4066 32.3347 39.5628L35.4385 41.1726C35.8006 41.3538 36.2214 41.4072 36.6133 41.3218C37.0051 41.2363 37.3378 41.0185 37.5419 40.7139L38.8037 37.6352C38.9154 37.3585 39.1255 37.1244 39.4034 36.9671C39.6814 36.8098 40.0127 36.7374 40.3494 36.7604L41.3068 36.8263C42.6412 36.9103 43.9655 37.1474 45.2463 37.5315L46.167 37.8018C46.4902 37.8967 46.7755 38.0789 46.9817 38.3221C47.1879 38.5653 47.3043 38.8568 47.314 39.1546L47.4041 42.2603C47.4243 42.9208 47.9718 43.4973 48.7097 43.6293L49.2111 43.638L51.963 43.2954L51.8935 43.1937L51.5794 42.6793C51.1284 41.9219 50.7802 41.1231 50.5424 40.3001L50.3952 39.7304C50.3193 39.4352 50.3482 39.1305 50.4779 38.8586C50.6076 38.5868 50.8317 38.3614 51.1189 38.2138L53.1643 37.177C53.3318 37.0408 53.5074 36.833 53.3305 36.5581L51.732 34.8406C51.5155 34.6018 51.3853 34.3126 51.3595 34.013C51.3338 33.7134 51.4137 33.4183 51.5882 33.1687L51.9277 32.6902C52.4278 31.9925 53.0284 31.3575 53.7151 30.8004L54.1895 30.419C54.4345 30.2148 54.7515 30.0899 55.0927 30.0632C55.4339 30.0365 55.7806 30.1094 56.0804 30.2709L58.1656 31.3578C58.292 31.425 58.4469 31.4365 58.5878 31.3969L58.933 31.0411L59.6681 29.1777C59.7831 28.9025 59.9932 28.6695 60.2696 28.5106C60.5459 28.3517 60.8749 28.2747 61.2114 28.2903L61.8656 28.3223C62.8358 28.3851 63.7726 28.5488 64.6759 28.8132L65.3027 28.9984C65.6341 29.0973 65.9262 29.2856 66.1369 29.5361C66.3475 29.7866 66.4658 30.0863 66.4746 30.3921L66.5217 32.5009C66.5242 32.5648 66.5424 32.6282 66.575 32.6865C66.6075 32.7449 66.6538 32.7968 66.7104 32.8387C66.7993 32.9105 66.9147 32.9501 67.0322 32.949L69.4631 32.6462C69.7935 32.6093 70.1334 32.6641 70.4364 32.8032C70.7394 32.9424 70.9907 33.159 71.156 33.4237L71.4746 33.9389C71.9384 34.7166 72.2826 35.5175 72.5074 36.3417L72.656 36.9035C72.7338 37.2001 72.7057 37.5067 72.5756 37.7801C72.4456 38.0536 72.2201 38.2801 71.9308 38.428L69.8817 39.46C69.7076 39.6073 69.5461 39.8135 69.7155 40.079L71.3088 41.7996C71.7572 42.2853 71.8132 42.9522 71.4547 43.4597ZM53.1238 48.4377C52.888 47.6385 52.5518 46.8614 52.1216 46.1215L49.8075 46.4168L49.794 46.4144C49.2556 46.4803 48.7045 46.4666 48.163 46.3738C47.9752 46.3402 44.2844 45.5862 44.2159 42.2046L44.1536 40.1296C43.2527 39.8826 42.3297 39.7174 41.399 39.6365L40.6266 41.554C40.5425 41.766 40.44 41.9693 40.319 42.1639C38.7435 44.5457 35.853 44.1418 35.4014 44.061C34.8946 43.9703 34.4052 43.8083 33.9331 43.5752L31.8651 42.4954C31.2127 43.0468 30.6286 43.6582 30.1217 44.3201L31.6575 45.9493C32.1077 46.4252 32.439 46.9781 32.6283 47.569C32.8176 48.1599 32.8602 48.7746 32.7532 49.3699C32.6462 49.9651 32.3922 50.5265 32.009 51.0146C31.6257 51.5027 31.1226 51.9057 30.5349 52.1952L28.5337 53.1913C28.772 53.9908 29.1046 54.7626 29.5314 55.5067L31.859 55.2138C32.1049 55.1818 32.3543 55.1682 32.6047 55.1729C32.9216 55.1729 33.235 55.2006 33.5451 55.2561C36.2772 55.7452 37.4442 57.8881 37.4425 59.4448L37.4839 61.5079C38.3848 61.7549 39.3078 61.9201 40.2384 62.001L41.0109 60.0836C41.0948 59.8709 41.1994 59.6658 41.3236 59.4705C42.917 57.0919 45.8113 57.5005 46.2629 57.5813C46.7757 57.6731 47.2653 57.8338 47.7319 58.0632L49.8006 59.1391L49.7931 59.1296C50.4514 58.5798 51.0311 57.9713 51.532 57.3041L49.9931 55.6662C49.5438 55.1912 49.213 54.6394 49.0241 54.0496C48.8351 53.4598 48.7926 52.8463 48.8994 52.2521C49.0062 51.658 49.2597 51.0977 49.6423 50.6105C50.0248 50.1233 50.527 49.7211 51.1137 49.4321L53.1238 48.4377ZM67.2378 37.6528C67.4991 37.3852 67.8062 37.1559 68.1487 36.9724L69.2085 36.4404C69.1085 36.1649 68.9922 35.8937 68.8601 35.628L67.3511 35.8079C66.3893 35.844 65.4316 35.5536 64.6721 34.9959C64.2482 34.6782 63.9041 34.285 63.664 33.8441C63.424 33.4032 63.2939 32.9253 63.283 32.4441L63.2618 31.4024C62.9485 31.3244 62.6301 31.2674 62.3093 31.2319L61.4431 33.0028C61.012 33.5108 60.4237 33.8956 59.7444 34.1138C59.2398 34.2651 58.6992 34.3166 58.1598 34.2649C57.6203 34.2131 57.0945 34.0592 56.6184 33.8137L55.5848 33.2718L55.2696 33.5885C55.2019 33.6574 55.1404 33.7262 55.0851 33.7946L55.0086 33.8864L54.9675 33.9358L55.9667 35.031C57.0906 36.7446 56.5537 38.1973 55.803 38.9874C55.5459 39.26 55.2364 39.4898 54.8876 39.6669L53.8317 40.2037C53.9282 40.4724 54.045 40.7392 54.1821 41.0044L55.6956 40.8252C56.6557 40.7952 57.6098 41.0861 58.3694 41.6404C58.7932 41.9623 59.1368 42.3592 59.3761 42.8033C59.6154 43.2473 59.7447 43.728 59.7551 44.2118L59.7791 45.2378C60.0888 45.3122 60.4078 45.3693 60.736 45.4091L61.6156 43.6406C62.04 43.128 62.6284 42.7419 63.3098 42.5288C63.8139 42.3748 64.3548 42.3218 64.8948 42.3737C65.4348 42.4255 65.9607 42.5809 66.4358 42.8289L67.4619 43.3613C67.6807 43.1545 67.886 42.9367 68.0771 42.7091L67.0779 41.6139L67.0689 41.6123C65.9533 39.9043 66.4872 38.4428 67.2378 37.6528ZM15.1732 52.3161L19.6449 53.1165L18.9416 57.0453L14.4699 56.2449C10.9121 55.608 7.72222 53.7554 5.6021 51.0947C3.48199 48.434 2.60528 45.1831 3.16484 42.0572L8.79105 10.6271C9.35061 7.50119 11.3006 4.7563 14.2121 2.99629C17.1235 1.23627 20.7579 0.605306 24.3158 1.24219L60.0889 7.64583C63.6468 8.28272 66.8366 10.1353 68.9568 12.796C71.0769 15.4567 71.9536 18.7076 71.394 21.8335L70.6908 25.7623L12.5594 15.3563L7.63648 42.8577C7.26344 44.9416 7.84791 47.1089 9.26132 48.8827C10.6747 50.6565 12.8013 51.8915 15.1732 52.3161ZM13.2627 11.4276L66.9224 21.033C67.2954 18.9491 66.711 16.7818 65.2975 15.008C63.8841 13.2342 61.7576 11.9992 59.3857 11.5746L23.6125 5.17095C21.2406 4.74636 18.8177 5.16701 16.8767 6.34035C14.9357 7.51369 13.6357 9.34362 13.2627 11.4276Z"
+                      fill="#4161CB" />
+                  </svg>
+                </div>
+                <h3
+                  class="font-primary text-lg sm:text-xl group-hover:text-2xl font-semibold leading-tight text-title-col mt-1 sm:mt-5 md:mt-10 group-hover:mt-5 transition-all duration-150">
+                  Modern, Scalable</br>Architecture
+                </h3>
+                <p
+                  class="font-secondary mt-2 sm:mt-4 group-hover:mt-6 text-sm leading-snug text-slate-500 group-hover:text-lg transition-all duration-150">
+                  Built using secure, scalable, and future-ready technologies that grow with your business.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section id="services">
+    <div class="max-w-screen-xl mx-auto py-7">
+      <div class="text-center lg:text-left px-10 lg:px-0 mx-auto lg:ml-10 max-w-xl">
+        <h2 class="section-titles">Our Expertise</h2>
+        <p class="micro-lines">We design and deliver technology solutions that help businesses operate smarter, scale
+          faster, and stay future-ready.</p>
+      </div>
 
-  <section id="hwo" class="py-12">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10">
-        How We Operate
-      </h2>
+      <div class="max-w-screen-xl mx-auto my-20">
 
-      <div class="grid gap-8 md:grid-cols-1">
-        <!-- Step 1 -->
+        <!-- Service Item -->
+        <div class="group service-item">
+          <div class="relative border-y-2 border-brand-primary">
+            <!-- Gradient Background -->
+            <div
+              class="service-bg absolute inset-0 bg-gradient-to-r from-[#303FA5] via-[#303e8f] to-[#303FA5] opacity-0 transition-opacity duration-250 pointer-events-none z-0">
+            </div>
+            <div
+              class="service-header relative z-10 text-brand-primary grid grid-cols-[15%_65%_20%] gap-2 px-3 md:px-15 py-10 sm:max-w-screen overflow-clip transition-all duration-250">
+              <div class="flex justify-center md:justify-start">
+                <h3
+                  class="expertise-heading service-name group-hover:scale-[103%] group-hover:text-shadow-sm transition-all duration-200">
+                  01.</h3>
+              </div>
+              <div class="max-w-xl">
+                <h3
+                  class="expertise-heading service-name group-hover:scale-[103%] group-hover:text-shadow-sm transition-all duration-200">
+                  AI Integration and Data Analytics
+                </h3>
+                <div class="service-content max-h-0 overflow-hidden transition-all duration-250">
+                  <p class="text-lg text-center xs:text-left pt-6">We integrate AI into your existing
+                    systems and build analytics solutions that convert business data into actionable insights and
+                    smarter
+                    decisions.</p>
+                  <p class="text-sm text-center xs:text-left text-brand-secondary pt-6">Applied AI where it delivers
+                    measurable business
+                    value.</p>
+                </div>
+              </div>
+              <div class="flex justify-start md:justify-end">
+                <svg viewBox="2 0 24 24"
+                  class="arrow h-9 w-9 sm:h-12 sm:w-12 rotate-[45deg] transition-all duration-200" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group service-item">
+          <div class="relative border-b-2 border-brand-primary">
+            <!-- Gradient Background -->
+            <div
+              class="service-bg absolute inset-0 bg-gradient-to-r from-[#303FA5] via-[#303e8f] to-[#303FA5] opacity-0 transition-opacity duration-250 pointer-events-none z-0">
+            </div>
+            <div
+              class="service-header relative z-10 text-brand-primary grid grid-cols-[15%_65%_20%] gap-2 px-3 md:px-15 py-10 sm:max-w-screen overflow-clip transition-all duration-250">
+              <div class="flex justify-center md:justify-start">
+                <h3
+                  class="expertise-heading service-name group-hover:scale-[103%] group-hover:text-shadow-sm transition-all duration-200">
+                  02.</h3>
+              </div>
+              <div class="max-w-xl">
+                <h3
+                  class="expertise-heading service-name group-hover:scale-[103%] group-hover:text-shadow-sm transition-all duration-200">
+                  Application Development
+                </h3>
+                <div class="service-content max-h-0 overflow-hidden transition-all duration-250">
+                  <p class="text-lg text-center xs:text-left pt-6">Custom web and mobile applications designed for
+                    performance, security, and scalability—built to
+                    support real-world business operations.</p>
+                  <p class="text-sm text-center xs:text-left text-brand-secondary pt-6">Software designed to grow
+                    alongside your business.</p>
+                </div>
+              </div>
+              <div class="flex justify-start md:justify-end">
+                <svg viewBox="2 0 24 24"
+                  class="arrow h-9 w-9 sm:h-12 sm:w-12 rotate-[45deg] transition-all duration-200" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group service-item">
+          <div class="relative border-b-2 border-brand-primary">
+            <!-- Gradient Background -->
+            <div
+              class="service-bg absolute inset-0 bg-gradient-to-r from-[#303FA5] via-[#303e8f] to-[#303FA5] opacity-0 transition-opacity duration-250 pointer-events-none z-0">
+            </div>
+            <div
+              class="service-header relative z-10 text-brand-primary grid grid-cols-[15%_65%_20%] gap-2 px-3 md:px-15 py-10 sm:max-w-screen overflow-clip transition-all duration-250">
+              <div class="flex justify-center md:justify-start">
+                <h3
+                  class="expertise-heading service-name group-hover:scale-[103%] group-hover:text-shadow-sm transition-all duration-200">
+                  03.</h3>
+              </div>
+              <div class="max-w-xl">
+                <h3
+                  class="expertise-heading service-name group-hover:scale-[103%] group-hover:text-shadow-sm transition-all duration-200">
+                  IoT Development & Integration
+                </h3>
+                <div class="service-content max-h-0 overflow-hidden transition-all duration-250">
+                  <p class="text-lg text-center xs:text-left pt-6">We design and integrate IoT solutions that connect
+                    devices, collect real-time data, and enable
+                    smarter monitoring and control.</p>
+                  <p class="text-sm text-center xs:text-left text-brand-secondary pt-6">Connecting devices to enable
+                    informed, real-time decisions.</p>
+                </div>
+              </div>
+              <div class="flex justify-start md:justify-end">
+                <svg viewBox="2 0 24 24"
+                  class="arrow h-9 w-9 sm:h-12 sm:w-12 rotate-[45deg] transition-all duration-200" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group service-item">
+          <div class="relative border-b-2 border-brand-primary">
+            <!-- Gradient Background -->
+            <div
+              class="service-bg absolute inset-0 bg-gradient-to-r from-[#303FA5] via-[#303e8f] to-[#303FA5] opacity-0 transition-opacity duration-250 pointer-events-none z-0">
+            </div>
+            <div
+              class="service-header relative z-10 text-brand-primary grid grid-cols-[15%_65%_20%] gap-2 px-3 md:px-15 py-10 sm:max-w-screen overflow-clip transition-all duration-250">
+              <div class="flex justify-center md:justify-start">
+                <h3
+                  class="expertise-heading service-name group-hover:scale-[103%] group-hover:text-shadow-sm transition-all duration-200">
+                  04.</h3>
+              </div>
+              <div class="max-w-xl">
+                <h3
+                  class="expertise-heading service-name group-hover:scale-[103%] group-hover:text-shadow-sm transition-all duration-200">
+                  Application Modernization
+                </h3>
+                <div class="service-content max-h-0 overflow-hidden transition-all duration-250">
+                  <p class="text-lg text-center xs:text-left pt-6">Upgrade legacy systems to modern, secure, and
+                    scalable architectures without disrupting your
+                    existing business workflows.</p>
+                  <p class="text-sm text-center xs:text-left text-brand-secondary pt-6">Enhancing legacy systems for
+                    today's performance demands.</p>
+                </div>
+              </div>
+              <div class="flex justify-start md:justify-end">
+                <svg viewBox="2 0 24 24"
+                  class="arrow h-9 w-9 sm:h-12 sm:w-12 rotate-[45deg] transition-all duration-200" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group service-item">
+          <div class="relative border-b-2 border-brand-primary">
+            <!-- Gradient Background -->
+            <div
+              class="service-bg absolute inset-0 bg-gradient-to-r from-[#303FA5] via-[#303e8f] to-[#303FA5] opacity-0 transition-opacity duration-250 pointer-events-none z-0">
+            </div>
+            <div
+              class="service-header relative z-10 text-brand-primary grid grid-cols-[15%_65%_20%] gap-2 px-3 md:px-15 py-10 sm:max-w-screen overflow-clip transition-all duration-250">
+              <div class="flex justify-center md:justify-start">
+                <h3
+                  class="service-name expertise-heading group-hover:scale-[103%] group-hover:text-shadow-sm transition-all duration-200">
+                  05.</h3>
+              </div>
+              <div class="max-w-xl">
+                <h3
+                  class="service-name expertise-heading group-hover:scale-[103%] group-hover:text-shadow-sm transition-all duration-200">
+                  Business Automation
+                </h3>
+                <div class="service-content max-h-0 overflow-hidden transition-all duration-250">
+                  <p class="text-lg text-center xs:text-left pt-6">Automate repetitive processes and workflows to
+                    improve efficiency, reduce errors, and free teams
+                    to focus on higher-value work.</p>
+                  <p class="text-sm text-center xs:text-left text-brand-secondary pt-6">Workflow automation designed
+                    around your unique operations.</p>
+                </div>
+              </div>
+              <div class="flex justify-start md:justify-end">
+                <svg viewBox="2 0 24 24"
+                  class="arrow h-9 w-9 sm:h-12 sm:w-12 rotate-[45deg] transition-all duration-200" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const serviceItems = document.querySelectorAll('.service-item');
+
+    serviceItems.forEach(item => {
+      const header = item.querySelector('.service-header');
+      const background = item.querySelector('.service-bg');
+      const content = item.querySelector('.service-content');
+      const names = item.querySelectorAll('.service-name');
+      const arrow = item.querySelector('.arrow');
+
+      header.addEventListener('click', () => {
+        // to prevent accordion toggle if text is being selected
+        const selection = window.getSelection();
+        if (selection && !selection.isCollapsed) {
+          return;
+        }
+
+        const isOpen = !content.classList.contains('max-h-0');
+
+        // Close all
+        serviceItems.forEach(i => {
+          i.querySelector('.service-content').classList.replace('max-h-[600px]', 'max-h-0');
+          i.querySelector('.arrow').classList.replace('rotate-[-45deg]', 'rotate-[45deg]');
+          i.querySelector('.service-header').classList.replace('text-white', 'text-brand-primary');
+          i.querySelector('.service-header').classList.remove('selection:!bg-brand-secondary', 'selection:!text-brand-primary');
+          i.querySelector('.service-bg').classList.replace('opacity-100', 'opacity-0');
+
+          i.querySelectorAll('.service-name').forEach(n => {
+            n.classList.add('group-hover:scale-[103%]', 'group-hover:text-shadow-lg');
+          });
+        });
+
+        // Open current
+        if (!isOpen) {
+          header.classList.replace('text-brand-primary', 'text-white');
+          header.classList.add('selection:!bg-brand-secondary', 'selection:!text-brand-primary');
+          content.classList.replace('max-h-0', 'max-h-[600px]');
+          arrow.classList.replace('rotate-[45deg]', 'rotate-[-45deg]');
+          background.classList.replace('opacity-0', 'opacity-100');
+
+          names.forEach(n => {
+            n.classList.remove('group-hover:scale-[103%]', 'group-hover:text-shadow-lg');
+          });
+        }
+      });
+    });
+  </script>
+
+  <section id="how_we_operate">
+    <div class="relative w-full overflow-x-clip">
+      <div class="max-w-screen-xl mx-auto py-7">
+        <div class="text-center lg:text-left px-10 lg:px-0 mx-auto lg:ml-10 max-w-2xl">
+          <h2 class="section-titles">How We Operate</h2>
+          <p class="micro-lines">We solve real operational challenges and support long-term growth through
+            business-first
+            planning and disciplined technical execution.</p>
+        </div>
+
         <div
-          class="flex flex-col items-center text-center bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-          <div
-            class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white text-lg font-bold mb-4">
+          class="max-w-screen-xl flex justify-center lg:grid lg:grid-cols-11 xl:grid-cols-10 my-10 md:my-16 lg:px-8 px-4 mx-auto lg:gap-8 xl:gap-0">
+          <div class="relative hidden lg:block lg:col-span-5 xl:col-span-4 overflow-visible">
+            <div class="relative w-full h-full overflow-visible">
+              <img src="./assets/images/gradient.png" alt="gradient-bg"
+                class="absolute top-[-20%] lg:left-[-15%] xl:left-[-95%] blur-2xl max-w-none lg:scale-65 xl:scale-50 origin-top-left -z-20 pointer-events-none" />
+              <img src="./assets/images/operation_placeholder.png" alt="operation-visual"
+                class="absolute top-[-10%] lg:left-[-10%] xl:left-[-50%] max-w-none lg:scale-50 xl:scale-52 origin-top-left -z-10 pointer-events-none" />
+            </div>
+          </div>
+
+          <div class="min-sm:max-w-xl max-w-2xl mx-auto col-span-6">
+            <div class="grid">
+
+              <div class="hwo-data-box md:-translate-x-7 lg:-translate-x-14">
+                <div class="flex justify-center sm:my-auto">
+                  <h3 class="hwo-box-content-serial">01.</h3>
+                </div>
+
+                <div class="hwo-box-content-icon"><svg viewBox="0 0 43 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="h-15 w-13">
+                    <path
+                      d="M38.9864 9.66821L23.0053 0.60815C22.2972 0.209638 21.4956 0 20.6797 0C19.8639 0 19.0622 0.209638 18.3541 0.60815C17.6491 1.00893 17.0635 1.58479 16.6559 2.27812C16.2482 2.97145 16.0328 3.75792 16.0313 4.55884V5.74131L14.9895 5.14933C14.2814 4.75085 13.4798 4.54123 12.664 4.54123C11.8482 4.54123 11.0466 4.75085 10.3385 5.14933C9.63249 5.55083 9.04624 6.12786 8.63852 6.82255C8.23079 7.51723 8.01593 8.30515 8.01547 9.10729V10.2883L6.97373 9.69778C6.26579 9.29954 5.4644 9.09006 4.64887 9.09006C3.83334 9.09006 3.03195 9.29954 2.32402 9.69778C1.61873 10.0987 1.03285 10.6747 0.624994 11.3682C0.21714 12.0618 0.00162021 12.8486 0 13.6498L0 42.0303C0.0010781 42.4335 0.117379 42.8283 0.335631 43.1697C0.553883 43.511 0.865295 43.7851 1.23433 43.9607C1.60336 44.1363 2.01515 44.2064 2.42271 44.1628C2.83027 44.1193 3.21717 43.9639 3.53927 43.7145L11.4632 37.5778L23.6859 44.5037C24.0193 44.6896 24.396 44.7873 24.7793 44.7873C25.1625 44.7873 25.5392 44.6896 25.8726 44.5037C26.5461 44.1204 26.9659 43.41 26.9659 42.6447V25.5694C26.9633 24.1878 26.5918 22.831 25.8884 21.635C25.185 20.4391 24.1745 19.4458 22.9581 18.7549L18.9501 16.4828V4.56314C18.9508 4.26411 19.0314 3.97052 19.1839 3.71183C19.3364 3.45313 19.5553 3.23842 19.8188 3.08923C20.0823 2.94003 20.381 2.86161 20.685 2.86181C20.989 2.86201 21.2876 2.94084 21.5509 3.09038L37.5321 12.146C38.3058 12.5858 38.9486 13.2177 39.3962 13.9785C39.8437 14.7393 40.0804 15.6023 40.0826 16.4813V37.7485C40.0826 38.3545 39.7501 38.9182 39.2158 39.2212L34.9813 41.6215V21.0226C34.9786 19.6412 34.6069 18.2847 33.9035 17.089C33.2002 15.8933 32.1898 14.9003 30.9736 14.2094L21.1353 8.63493V11.9373L29.5163 16.6873C30.2904 17.1267 30.9335 17.7585 31.3811 18.5194C31.8288 19.2803 32.0653 20.1435 32.0669 21.0226V42.8577C32.0669 43.6187 32.4853 44.3332 33.1604 44.7167C33.4938 44.9024 33.8705 45 34.2536 45C34.6368 45 35.0134 44.9024 35.3468 44.7167L40.6758 41.6962C42.1086 40.883 43 39.3706 43 37.7427V16.4758C42.9936 15.0952 42.6197 13.7403 41.9155 12.5459C41.2114 11.3515 40.2015 10.3594 38.9864 9.66821ZM21.4936 21.2311C22.2679 21.6707 22.9111 22.3028 23.3588 23.064C23.8064 23.8252 24.0427 24.6888 24.0441 25.5681V41.41L13.9249 35.6752L17.1735 33.1635C17.7267 32.7386 18.1738 32.1948 18.4808 31.5739C18.7877 30.9529 18.9463 30.2712 18.9444 29.5808V19.7908L21.495 21.2326L21.4936 21.2311ZM16.0299 18.1346V29.5751C16.0299 30.1009 15.7877 30.5899 15.3693 30.9113L2.91308 40.5517V13.6457C2.91352 13.3467 2.99392 13.0531 3.14622 12.7943C3.29851 12.5356 3.51733 12.3208 3.78071 12.1716C4.04409 12.0223 4.34276 11.9439 4.64672 11.9441C4.95068 11.9443 5.24923 12.0231 5.5124 12.1727L8.01547 13.5893V33.871L10.9286 31.6159V9.10448C10.9288 8.80528 11.0092 8.51143 11.1616 8.25248C11.3139 7.99352 11.533 7.77859 11.7966 7.6293C12.0602 7.48001 12.3591 7.40163 12.6633 7.40202C12.9675 7.40242 13.2662 7.48159 13.5294 7.63156L16.0298 9.04666V14.8281L13.1182 13.1763V16.4815L16.0328 18.1346H16.0299Z"
+                      fill="#303FA5" />
+                  </svg></div>
+
+                <div class="hwo-box-content">
+                  <h3 class="hwo-box-content-heading">Discovery & Understanding
+                  </h3>
+                  <p class="hwo-box-content-paragh">We immerse
+                    ourselves in your objectives, existing systems, and
+                    challenges to ensure we solve the right problem from the start.</p>
+                </div>
+              </div>
+
+              <div class="hwo-data-box lg:-translate-x-7">
+                <div class="flex justify-center sm:my-auto">
+                  <h3 class="hwo-box-content-serial">02.</h3>
+                </div>
+
+                <div class="hwo-box-content-icon"><svg viewBox="0 0 43 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="h-15 w-13">
+                    <path
+                      d="M38.9864 9.66821L23.0053 0.60815C22.2972 0.209638 21.4956 0 20.6797 0C19.8639 0 19.0622 0.209638 18.3541 0.60815C17.6491 1.00893 17.0635 1.58479 16.6559 2.27812C16.2482 2.97145 16.0328 3.75792 16.0313 4.55884V5.74131L14.9895 5.14933C14.2814 4.75085 13.4798 4.54123 12.664 4.54123C11.8482 4.54123 11.0466 4.75085 10.3385 5.14933C9.63249 5.55083 9.04624 6.12786 8.63852 6.82255C8.23079 7.51723 8.01593 8.30515 8.01547 9.10729V10.2883L6.97373 9.69778C6.26579 9.29954 5.4644 9.09006 4.64887 9.09006C3.83334 9.09006 3.03195 9.29954 2.32402 9.69778C1.61873 10.0987 1.03285 10.6747 0.624994 11.3682C0.21714 12.0618 0.00162021 12.8486 0 13.6498L0 42.0303C0.0010781 42.4335 0.117379 42.8283 0.335631 43.1697C0.553883 43.511 0.865295 43.7851 1.23433 43.9607C1.60336 44.1363 2.01515 44.2064 2.42271 44.1628C2.83027 44.1193 3.21717 43.9639 3.53927 43.7145L11.4632 37.5778L23.6859 44.5037C24.0193 44.6896 24.396 44.7873 24.7793 44.7873C25.1625 44.7873 25.5392 44.6896 25.8726 44.5037C26.5461 44.1204 26.9659 43.41 26.9659 42.6447V25.5694C26.9633 24.1878 26.5918 22.831 25.8884 21.635C25.185 20.4391 24.1745 19.4458 22.9581 18.7549L18.9501 16.4828V4.56314C18.9508 4.26411 19.0314 3.97052 19.1839 3.71183C19.3364 3.45313 19.5553 3.23842 19.8188 3.08923C20.0823 2.94003 20.381 2.86161 20.685 2.86181C20.989 2.86201 21.2876 2.94084 21.5509 3.09038L37.5321 12.146C38.3058 12.5858 38.9486 13.2177 39.3962 13.9785C39.8437 14.7393 40.0804 15.6023 40.0826 16.4813V37.7485C40.0826 38.3545 39.7501 38.9182 39.2158 39.2212L34.9813 41.6215V21.0226C34.9786 19.6412 34.6069 18.2847 33.9035 17.089C33.2002 15.8933 32.1898 14.9003 30.9736 14.2094L21.1353 8.63493V11.9373L29.5163 16.6873C30.2904 17.1267 30.9335 17.7585 31.3811 18.5194C31.8288 19.2803 32.0653 20.1435 32.0669 21.0226V42.8577C32.0669 43.6187 32.4853 44.3332 33.1604 44.7167C33.4938 44.9024 33.8705 45 34.2536 45C34.6368 45 35.0134 44.9024 35.3468 44.7167L40.6758 41.6962C42.1086 40.883 43 39.3706 43 37.7427V16.4758C42.9936 15.0952 42.6197 13.7403 41.9155 12.5459C41.2114 11.3515 40.2015 10.3594 38.9864 9.66821ZM21.4936 21.2311C22.2679 21.6707 22.9111 22.3028 23.3588 23.064C23.8064 23.8252 24.0427 24.6888 24.0441 25.5681V41.41L13.9249 35.6752L17.1735 33.1635C17.7267 32.7386 18.1738 32.1948 18.4808 31.5739C18.7877 30.9529 18.9463 30.2712 18.9444 29.5808V19.7908L21.495 21.2326L21.4936 21.2311ZM16.0299 18.1346V29.5751C16.0299 30.1009 15.7877 30.5899 15.3693 30.9113L2.91308 40.5517V13.6457C2.91352 13.3467 2.99392 13.0531 3.14622 12.7943C3.29851 12.5356 3.51733 12.3208 3.78071 12.1716C4.04409 12.0223 4.34276 11.9439 4.64672 11.9441C4.95068 11.9443 5.24923 12.0231 5.5124 12.1727L8.01547 13.5893V33.871L10.9286 31.6159V9.10448C10.9288 8.80528 11.0092 8.51143 11.1616 8.25248C11.3139 7.99352 11.533 7.77859 11.7966 7.6293C12.0602 7.48001 12.3591 7.40163 12.6633 7.40202C12.9675 7.40242 13.2662 7.48159 13.5294 7.63156L16.0298 9.04666V14.8281L13.1182 13.1763V16.4815L16.0328 18.1346H16.0299Z"
+                      fill="#303FA5" />
+                  </svg></div>
+
+                <div class="hwo-box-content">
+                  <h3 class="hwo-box-content-heading">Solution Design & Planning
+                  </h3>
+                  <p class="hwo-box-content-paragh">We define a clear
+                    architecture, scope, and milestones, using your feedback to guide every key decision.</p>
+                </div>
+              </div>
+
+              <div class="hwo-data-box md:translate-x-7 lg:translate-x-0">
+                <div class="flex justify-center sm:my-auto">
+                  <h3 class="hwo-box-content-serial">03.</h3>
+                </div>
+
+                <div class="hwo-box-content-icon"><svg viewBox="0 0 43 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="h-15 w-13">
+                    <path
+                      d="M38.9864 9.66821L23.0053 0.60815C22.2972 0.209638 21.4956 0 20.6797 0C19.8639 0 19.0622 0.209638 18.3541 0.60815C17.6491 1.00893 17.0635 1.58479 16.6559 2.27812C16.2482 2.97145 16.0328 3.75792 16.0313 4.55884V5.74131L14.9895 5.14933C14.2814 4.75085 13.4798 4.54123 12.664 4.54123C11.8482 4.54123 11.0466 4.75085 10.3385 5.14933C9.63249 5.55083 9.04624 6.12786 8.63852 6.82255C8.23079 7.51723 8.01593 8.30515 8.01547 9.10729V10.2883L6.97373 9.69778C6.26579 9.29954 5.4644 9.09006 4.64887 9.09006C3.83334 9.09006 3.03195 9.29954 2.32402 9.69778C1.61873 10.0987 1.03285 10.6747 0.624994 11.3682C0.21714 12.0618 0.00162021 12.8486 0 13.6498L0 42.0303C0.0010781 42.4335 0.117379 42.8283 0.335631 43.1697C0.553883 43.511 0.865295 43.7851 1.23433 43.9607C1.60336 44.1363 2.01515 44.2064 2.42271 44.1628C2.83027 44.1193 3.21717 43.9639 3.53927 43.7145L11.4632 37.5778L23.6859 44.5037C24.0193 44.6896 24.396 44.7873 24.7793 44.7873C25.1625 44.7873 25.5392 44.6896 25.8726 44.5037C26.5461 44.1204 26.9659 43.41 26.9659 42.6447V25.5694C26.9633 24.1878 26.5918 22.831 25.8884 21.635C25.185 20.4391 24.1745 19.4458 22.9581 18.7549L18.9501 16.4828V4.56314C18.9508 4.26411 19.0314 3.97052 19.1839 3.71183C19.3364 3.45313 19.5553 3.23842 19.8188 3.08923C20.0823 2.94003 20.381 2.86161 20.685 2.86181C20.989 2.86201 21.2876 2.94084 21.5509 3.09038L37.5321 12.146C38.3058 12.5858 38.9486 13.2177 39.3962 13.9785C39.8437 14.7393 40.0804 15.6023 40.0826 16.4813V37.7485C40.0826 38.3545 39.7501 38.9182 39.2158 39.2212L34.9813 41.6215V21.0226C34.9786 19.6412 34.6069 18.2847 33.9035 17.089C33.2002 15.8933 32.1898 14.9003 30.9736 14.2094L21.1353 8.63493V11.9373L29.5163 16.6873C30.2904 17.1267 30.9335 17.7585 31.3811 18.5194C31.8288 19.2803 32.0653 20.1435 32.0669 21.0226V42.8577C32.0669 43.6187 32.4853 44.3332 33.1604 44.7167C33.4938 44.9024 33.8705 45 34.2536 45C34.6368 45 35.0134 44.9024 35.3468 44.7167L40.6758 41.6962C42.1086 40.883 43 39.3706 43 37.7427V16.4758C42.9936 15.0952 42.6197 13.7403 41.9155 12.5459C41.2114 11.3515 40.2015 10.3594 38.9864 9.66821ZM21.4936 21.2311C22.2679 21.6707 22.9111 22.3028 23.3588 23.064C23.8064 23.8252 24.0427 24.6888 24.0441 25.5681V41.41L13.9249 35.6752L17.1735 33.1635C17.7267 32.7386 18.1738 32.1948 18.4808 31.5739C18.7877 30.9529 18.9463 30.2712 18.9444 29.5808V19.7908L21.495 21.2326L21.4936 21.2311ZM16.0299 18.1346V29.5751C16.0299 30.1009 15.7877 30.5899 15.3693 30.9113L2.91308 40.5517V13.6457C2.91352 13.3467 2.99392 13.0531 3.14622 12.7943C3.29851 12.5356 3.51733 12.3208 3.78071 12.1716C4.04409 12.0223 4.34276 11.9439 4.64672 11.9441C4.95068 11.9443 5.24923 12.0231 5.5124 12.1727L8.01547 13.5893V33.871L10.9286 31.6159V9.10448C10.9288 8.80528 11.0092 8.51143 11.1616 8.25248C11.3139 7.99352 11.533 7.77859 11.7966 7.6293C12.0602 7.48001 12.3591 7.40163 12.6633 7.40202C12.9675 7.40242 13.2662 7.48159 13.5294 7.63156L16.0298 9.04666V14.8281L13.1182 13.1763V16.4815L16.0328 18.1346H16.0299Z"
+                      fill="#303FA5" />
+                  </svg></div>
+
+                <div class="hwo-box-content">
+                  <h3 class="hwo-box-content-heading">Build, Integrate & Optimize
+                  </h3>
+                  <p class="hwo-box-content-paragh">We develop and
+                    test solutions that modernize your systems and improve efficiency without disrupting your daily
+                    operations.</p>
+                </div>
+              </div>
+
+              <div class="hwo-data-box md:-translate-x-7 lg:-translate-x-14">
+                <div class="flex justify-center sm:my-auto">
+                  <h3 class="hwo-box-content-serial">04.</h3>
+                </div>
+
+                <div class="hwo-box-content-icon"><svg viewBox="0 0 43 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="h-15 w-13">
+                    <path
+                      d="M38.9864 9.66821L23.0053 0.60815C22.2972 0.209638 21.4956 0 20.6797 0C19.8639 0 19.0622 0.209638 18.3541 0.60815C17.6491 1.00893 17.0635 1.58479 16.6559 2.27812C16.2482 2.97145 16.0328 3.75792 16.0313 4.55884V5.74131L14.9895 5.14933C14.2814 4.75085 13.4798 4.54123 12.664 4.54123C11.8482 4.54123 11.0466 4.75085 10.3385 5.14933C9.63249 5.55083 9.04624 6.12786 8.63852 6.82255C8.23079 7.51723 8.01593 8.30515 8.01547 9.10729V10.2883L6.97373 9.69778C6.26579 9.29954 5.4644 9.09006 4.64887 9.09006C3.83334 9.09006 3.03195 9.29954 2.32402 9.69778C1.61873 10.0987 1.03285 10.6747 0.624994 11.3682C0.21714 12.0618 0.00162021 12.8486 0 13.6498L0 42.0303C0.0010781 42.4335 0.117379 42.8283 0.335631 43.1697C0.553883 43.511 0.865295 43.7851 1.23433 43.9607C1.60336 44.1363 2.01515 44.2064 2.42271 44.1628C2.83027 44.1193 3.21717 43.9639 3.53927 43.7145L11.4632 37.5778L23.6859 44.5037C24.0193 44.6896 24.396 44.7873 24.7793 44.7873C25.1625 44.7873 25.5392 44.6896 25.8726 44.5037C26.5461 44.1204 26.9659 43.41 26.9659 42.6447V25.5694C26.9633 24.1878 26.5918 22.831 25.8884 21.635C25.185 20.4391 24.1745 19.4458 22.9581 18.7549L18.9501 16.4828V4.56314C18.9508 4.26411 19.0314 3.97052 19.1839 3.71183C19.3364 3.45313 19.5553 3.23842 19.8188 3.08923C20.0823 2.94003 20.381 2.86161 20.685 2.86181C20.989 2.86201 21.2876 2.94084 21.5509 3.09038L37.5321 12.146C38.3058 12.5858 38.9486 13.2177 39.3962 13.9785C39.8437 14.7393 40.0804 15.6023 40.0826 16.4813V37.7485C40.0826 38.3545 39.7501 38.9182 39.2158 39.2212L34.9813 41.6215V21.0226C34.9786 19.6412 34.6069 18.2847 33.9035 17.089C33.2002 15.8933 32.1898 14.9003 30.9736 14.2094L21.1353 8.63493V11.9373L29.5163 16.6873C30.2904 17.1267 30.9335 17.7585 31.3811 18.5194C31.8288 19.2803 32.0653 20.1435 32.0669 21.0226V42.8577C32.0669 43.6187 32.4853 44.3332 33.1604 44.7167C33.4938 44.9024 33.8705 45 34.2536 45C34.6368 45 35.0134 44.9024 35.3468 44.7167L40.6758 41.6962C42.1086 40.883 43 39.3706 43 37.7427V16.4758C42.9936 15.0952 42.6197 13.7403 41.9155 12.5459C41.2114 11.3515 40.2015 10.3594 38.9864 9.66821ZM21.4936 21.2311C22.2679 21.6707 22.9111 22.3028 23.3588 23.064C23.8064 23.8252 24.0427 24.6888 24.0441 25.5681V41.41L13.9249 35.6752L17.1735 33.1635C17.7267 32.7386 18.1738 32.1948 18.4808 31.5739C18.7877 30.9529 18.9463 30.2712 18.9444 29.5808V19.7908L21.495 21.2326L21.4936 21.2311ZM16.0299 18.1346V29.5751C16.0299 30.1009 15.7877 30.5899 15.3693 30.9113L2.91308 40.5517V13.6457C2.91352 13.3467 2.99392 13.0531 3.14622 12.7943C3.29851 12.5356 3.51733 12.3208 3.78071 12.1716C4.04409 12.0223 4.34276 11.9439 4.64672 11.9441C4.95068 11.9443 5.24923 12.0231 5.5124 12.1727L8.01547 13.5893V33.871L10.9286 31.6159V9.10448C10.9288 8.80528 11.0092 8.51143 11.1616 8.25248C11.3139 7.99352 11.533 7.77859 11.7966 7.6293C12.0602 7.48001 12.3591 7.40163 12.6633 7.40202C12.9675 7.40242 13.2662 7.48159 13.5294 7.63156L16.0298 9.04666V14.8281L13.1182 13.1763V16.4815L16.0328 18.1346H16.0299Z"
+                      fill="#303FA5" />
+                  </svg></div>
+
+                <div class="hwo-box-content">
+                  <h3 class="hwo-box-content-heading">Delivery & Evolution</h3>
+                  <p class="hwo-box-content-paragh">We deploy and
+                    support your solution, helping it evolve to remain secure and scalable as your business grows.</p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why_choose_us">
+    <div class="max-w-screen-xl mx-auto px-10 mt-7 md:mt-10 mb-10 md:mb-24 lg:mb-28">
+      <div>
+        <h2 class="section-titles text-center">
+          Why Choose Us
+        </h2>
+        <div class="max-w-lg mx-auto">
+          <p class="micro-lines text-center">
+            More than just development — we focus on delivering real business value.
+          </p>
+        </div>
+      </div>
+
+      <div id="bento" class="max-w-2xl h-[70vh] flex flex-col gap-3 mt-10 mx-auto">
+
+
+        <!-- Row 1 -->
+        <div class="row flex flex-1 gap-3 transition-all duration-[250ms]">
+
+          <!-- Wide -->
+          <div class="box flex-[1] bg-white border-2 border-blue-600 rounded-2xl 
+                flex items-center justify-center cursor-pointer
+                transition-all duration-[250ms]">
             1
           </div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Understanding Needs</h3>
-          <p class="text-gray-600 text-sm">
-            We start by analyzing your goals, challenges, and requirements to design the right solution.
-          </p>
-        </div>
 
-        <!-- Step 2 -->
-        <div
-          class="flex flex-col items-center text-center bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-          <div
-            class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white text-lg font-bold mb-4">
+          <!-- Narrow -->
+          <div class="box flex-[0.8] bg-white border-2 border-blue-600 rounded-2xl 
+                flex items-center justify-center cursor-pointer
+                transition-all duration-[250ms]">
             2
           </div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Planning & Strategy</h3>
-          <p class="text-gray-600 text-sm">
-            We define a clear roadmap, set milestones, and create a strategy tailored to your business.
-          </p>
+
         </div>
 
-        <!-- Step 3 -->
-        <div
-          class="flex flex-col items-center text-center bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-          <div
-            class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white text-lg font-bold mb-4">
+        <!-- Row 2 -->
+        <div class="row flex flex-1 gap-3 transition-all duration-[250ms]">
+
+          <!-- Narrow -->
+          <div class="box flex-[0.8] bg-white border-2 border-blue-600 rounded-2xl 
+                flex items-center justify-center cursor-pointer
+                transition-all duration-[250ms]">
             3
           </div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Development & Execution</h3>
-          <p class="text-gray-600 text-sm">
-            Our team builds, tests, and delivers high-quality software with Agile methodology.
-          </p>
-        </div>
 
-        <!-- Step 4 -->
-        <div
-          class="flex flex-col items-center text-center bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-          <div
-            class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white text-lg font-bold mb-4">
+          <!-- Wide -->
+          <div class="box flex-[1] bg-white border-2 border-blue-600 rounded-2xl 
+                flex items-center justify-center cursor-pointer
+                transition-all duration-[250ms]">
             4
           </div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Delivery & Support</h3>
-          <p class="text-gray-600 text-sm">
-            We launch your product and provide ongoing support to ensure smooth operation and growth.
-          </p>
+
         </div>
+
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <script>
+    const boxes = document.querySelectorAll(".box");
+    const rows = document.querySelectorAll(".row");
+    const container = document.getElementById("bento");
+
+    // Save default flex values
+    boxes.forEach(box => {
+      box.dataset.defaultFlex = getComputedStyle(box).flexGrow;
+    });
+
+    rows.forEach(row => {
+      row.dataset.defaultFlex = getComputedStyle(row).flexGrow;
+    });
+
+    function activateBox(targetBox) {
+
+      const activeRow = targetBox.parentElement;
+      const otherRow = [...rows].find(r => r !== activeRow);
+
+      // Expand active row
+      rows.forEach(row => {
+        row.style.flex = row === activeRow ? "2" : "0.8";
+      });
+
+      // Expand active box + shrink sibling
+      [...activeRow.children].forEach(box => {
+        box.style.flex = box === targetBox ? "2" : "0.8";
+      });
+    }
+
+    function resetLayout() {
+      rows.forEach(row => {
+        row.style.flex = row.dataset.defaultFlex;
+      });
+
+      boxes.forEach(box => {
+        box.style.flex = box.dataset.defaultFlex;
+      });
+    }
+
+    boxes.forEach(box => {
+      box.addEventListener("mouseenter", () => activateBox(box));
+      box.addEventListener("click", () => activateBox(box));
+    });
+
+    container.addEventListener("mouseleave", resetLayout);
+  </script>
+
+
+
+  <section id="call_to_action">
+    <div class="max-w-screen-xl mx-auto px-5 sm:px-10 selection:!bg-brand-secondary selection:!text-brand-primary">
+      <div class="bg-brand-primary rounded-3xl p-5 md:p-10">
+        <div class="text-center text-white mx-auto max-w-2xl">
+          <h2 class="font-primary text-xl md:text-3xl font-bold md:font-semibold leading-tight mb-5 lg:mb-10">Let’s
+            Discuss Your
+            Business and Technology Needs</h2>
+          <p class="font-secondary font-light md:text-lg lg:text-xl mb-5">Talk to us about your goals, challenges, and
+            existing systems. We’ll help you
+            identify the
+            right approach—no obligation.</p>
+
+          <div class="group relative inline-block">
+            <div class="absolute inset-0 rounded-4xl 
+              bg-brand-secondary blur-md opacity-50 group-hover:opacity-75 transition-all duration-200"></div>
+
+            <button class="relative bg-brand-secondary font-secondary px-5 py-3 rounded-4xl text-title-col font-bold">
+              Get in Touch
+            </button>
+          </div>
+
+        </div>
+
+
       </div>
     </div>
   </section>
 
-  <section id="cta" class="bg-gray-50">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-      <div class="mx-auto max-w-screen-sm text-center">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900">Ready to transform your
-          Business?</h2>
-        <p class="mb-6 font-light text-gray-500 md:text-lg">let's discuss how our expertise can drive your next big idea
-        </p>
-        <a href="#"
-          class="text-white bg-[#303fa4] hover:bg-blue-900 font-medium rounded-xl text-md px-5 py-2.5 mr-2 mb-2">Contact
-          us Today</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="p-4 bg-white md:p-8 lg:p-10">
+  <footer class="p-8 bg-white">
     <div class="mx-auto max-w-screen-xl text-center">
       <div class="flex justify-center items-center">
         <a href="https://www.stellaign.com" class="text-2xl font-semibold text-gray-900">
-          <img src="/assets/logo/originalLogoHD.png" class="mr-3 h-12" alt="Stellaign Logo" />
-        </a>
-        <a href="https://www.stellaign.com" class="text-2xl font-semibold text-gray-900">
-          Stellaign
+          <img src="/assets/logo/Primary Logo@4x.png" class="h-22 mb-6" alt="Stellaign Logo" />
         </a>
       </div>
-      <p class="mt-2 mb-6 text-gray-500">We Ship Excellence</p>
       <ul class="flex flex-wrap justify-center items-center md:mb-6 text-gray-900">
-        <li class="max-md:pb-3.5">
+        <li class="max-sm:pb-3.5">
           <a href="/about-us.html" class="mr-4 hover:underline md:mr-6">About Us</a>
         </li>
-        <li class="max-md:pb-3.5">
+        <li class="max-sm:pb-3.5">
           <a href="/contact-us.html" class="mr-4 hover:underline md:mr-6">Contact Us</a>
         </li>
-        <li class="max-md:pb-3.5">
+        <li class="max-sm:pb-3.5">
           <button id="careerButton" data-modal-target="careerModal" data-modal-toggle="careerModal"
-            class="mr-4 hover:underline md:mr-6">Career at Stellaign</button>
-
-          <div id="popoverContent"
-            class="absolute left-1/2 bottom-full transform -translate-x-1/2 -translate-y-2 w-64 bg-white border border-gray-300 rounded-lg shadow-lg opacity-0 pointer-events-none transition-all duration-300">
-            <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg">
-              <h3 class="font-semibold text-gray-900">Popover top</h3>
-            </div>
-            <div class="px-3 py-2">
-              <p>And here's some amazing content. It's very engaging. Right?</p>
-            </div>
-            <div data-popper-arrow></div>
-          </div>
+            class="mr-4 hover:underline md:mr-6">
+            Career at Stellaign
+          </button>
         </li>
-        <li class="max-md:pb-3.5">
-          <a href="/privacypolicy.html" class="mr-4 hover:underline md:mr-6 ">Privacy Policy</a>
+        <li class="max-sm:pb-3.5">
+          <a href="/privacypolicy.html" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
         </li>
-        <li class="max-md:pb-3.5">
+        <li class="max-sm:pb-3.5">
           <a href="/terms&conditions.html" class="mr-4 hover:underline md:mr-6">Terms & Conditions</a>
         </li>
       </ul>
-      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+      <hr class="max-sm:mt-3 my-6 border-gray-200 sm:mx-auto" />
       <div class="flex mb-4 mt-2 space-x-1.5 justify-center sm:mt-0">
         <a href="https://www.youtube.com/@placeholder" target="_blank" class="text-gray-500 hover:text-tube-primary">
           <svg class="w-5.5 h-5.5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="-143 145 512 512"
@@ -609,21 +1248,20 @@
         </a>
       </div>
       <span class="text-sm text-gray-500 sm:text-center">© 2025 <a href="./" class="hover:underline">Stellaign</a>. All
-        Rights Reserved.</span>
+        Rights
+        Reserved.</span>
     </div>
   </footer>
 
-
-
   <!-- Custom script for accordions -->
   <script>
-    document.querySelectorAll(".accordion-btn").forEach(btn => {
+    document.querySelectorAll(".accordion-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
         const id = btn.getAttribute("data-accordion");
         const content = document.getElementById(`answer-${id}`);
 
         // Close others
-        document.querySelectorAll(".accordion-content").forEach(el => {
+        document.querySelectorAll(".accordion-content").forEach((el) => {
           if (el !== content) {
             el.classList.remove("max-h-40", "pb-4");
             el.classList.add("max-h-0");
@@ -638,150 +1276,22 @@
     });
   </script>
 
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // --- Dropdown toggle functionality ---
-      const servicesBtn = document.getElementById("services-btn");
-      const servicesMenu = document.getElementById("services-menu");
-      const contactModal = document.getElementById("contactUsModal");
+  <!-- Custom Script for Hero section rotating text -->
+  <script>
+    const slides = document.querySelectorAll('.hero-slide');
+    let current = 0;
+    const interval = 5500;
 
-      servicesBtn?.addEventListener("click", (e) => {
-        e.stopPropagation();
-        servicesMenu?.classList.toggle("hidden");
-      });
+    setInterval(() => {
+      slides[current].classList.remove('opacity-100', 'translate-x-0');
+      slides[current].classList.add('opacity-0', 'translate-x-4');
 
-      // Close dropdown if clicking outside (safely handle missing contactModal)
-      document.addEventListener("click", (e) => {
-        const clickedInsideModal = contactModal && contactModal.contains(e.target);
-        if (!servicesMenu?.contains(e.target) && !servicesBtn?.contains(e.target) && !clickedInsideModal) {
-          servicesMenu?.classList.add("hidden");
-        }
-      });
+      current = (current + 1) % slides.length;
 
-      // --- Flowbite modal helpers (use data attributes) ---
-      function getModalId(modalEl) {
-        return modalEl?.id || null;
-      }
-
-      function findToggleForModal(modalId) {
-        if (!modalId) return null;
-        return document.querySelector(`[data-modal-toggle="${modalId}"]`) || document.querySelector(`[data-modal-target="${modalId}"]`);
-      }
-
-      function findHideForModal(modalId) {
-        if (!modalId) return null;
-        return document.querySelector(`[data-modal-hide="${modalId}"]`) || document.querySelector(`[data-modal-close="${modalId}"]`);
-      }
-
-      function showModalWithFlowbite(modalEl) {
-        const modalId = getModalId(modalEl);
-        if (!modalId) return;
-
-        // If there's already a toggle button, click it
-        const toggle = findToggleForModal(modalId);
-        if (toggle) {
-          toggle.click();
-          return;
-        }
-
-        // Otherwise create a temporary trigger using data attributes that Flowbite listens to
-        const tmp = document.createElement("button");
-        tmp.type = "button";
-        tmp.style.display = "none";
-        tmp.setAttribute("data-modal-toggle", modalId);
-        document.body.appendChild(tmp);
-        tmp.click();
-        // remove after short delay to allow Flowbite to pick up (immediate removal is usually fine)
-        setTimeout(() => tmp.remove(), 50);
-      }
-
-      function hideModalWithFlowbite(modalEl) {
-        const modalId = getModalId(modalEl);
-        if (!modalId) return;
-
-        const hideTrigger = findHideForModal(modalId);
-        if (hideTrigger) {
-          hideTrigger.click();
-          return;
-        }
-
-        // fallback: if Flowbite not wired up or no hide trigger, use basic hide (keeps aria consistent)
-        modalEl.classList.add("hidden");
-        modalEl.setAttribute("aria-hidden", "true");
-      }
-
-      // Close modal on Escape (using Flowbite hide trigger if available)
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && contactModal) {
-          hideModalWithFlowbite(contactModal);
-        }
-      });
-
-      // --- Menu hover highlight + data switch functionality ---
-      const menuItems = document.querySelectorAll(".menu-item");
-      const menuDatas = document.querySelectorAll(".menu-data");
-
-      if (menuItems.length > 0 && menuDatas.length > 0) {
-        // Track currently selected element index and last action guard
-        let selectedIndex = 0;
-
-        // Helper: select item by index (desktop behavior)
-        function selectItem(index) {
-          if (index === selectedIndex) return;
-          menuItems[selectedIndex]?.classList.remove("bg-brand-primary-2");
-          menuDatas[selectedIndex]?.classList.add("hidden");
-
-          menuItems[index].classList.add("bg-brand-primary-2");
-          menuDatas[index].classList.remove("hidden");
-
-          selectedIndex = index;
-        }
-
-        // Initial state
-        menuItems.forEach((_, i) => {
-          menuDatas[i].classList.toggle("hidden", i !== 0);
-        });
-        menuItems[0].classList.add("bg-brand-primary-2");
-
-        // Attach unified handlers
-        menuItems.forEach((item, index) => {
-          const unifiedHandler = (eventType) => (e) => {
-
-            // If this is a click and viewport is mobile (<768px), open modal via Flowbite instead of selecting
-            if (eventType === "click" && window.innerWidth < 768) {
-              e.stopPropagation?.();
-              if (contactModal) {
-                showModalWithFlowbite(contactModal);
-              } else {
-                // fallback: if modal missing, keep normal behavior
-                selectItem(index);
-              }
-              return;
-            }
-
-            // Desktop/tablet or non-click events: run the selection logic
-            e.stopPropagation?.();
-            selectItem(index);
-          };
-
-          // click (modal on mobile) and pointerenter (desktop hover)
-          item.addEventListener("click", unifiedHandler("click"));
-          item.addEventListener("pointerenter", unifiedHandler("pointerenter"));
-
-          // keyboard support (Enter / Space)
-          item.addEventListener("keydown", (e) => {
-            if (e.key === "Enter" || e.key === " ") {
-              e.preventDefault();
-              // simulate click behavior (modal on mobile, select on desktop)
-              unifiedHandler("click")(e);
-            }
-          });
-        });
-      }
-    });
-  </script> -->
-
-
+      slides[current].classList.remove('opacity-0', 'translate-x-4');
+      slides[current].classList.add('opacity-100', 'translate-x-0');
+    }, interval);
+  </script>
 </body>
 
 </html>
