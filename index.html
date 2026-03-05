@@ -1046,101 +1046,132 @@
         </div>
       </div>
 
-      <div id="bento" class="max-w-2xl h-[70vh] flex flex-col gap-3 mt-10 mx-auto">
+      <div class="grid lg:grid-rows-2 mt-5 h-fit mx-auto">
 
+        <div class="wcu-row items-end">
 
-        <!-- Row 1 -->
-        <div class="row flex flex-1 gap-3 transition-all duration-[250ms]">
+          <!-- row1 box1 -->
+          <div class="wcu-container group lg:max-w-xs">
+            <div class="relative">
+              <div class="wcu-glowbox"></div>
+              <div class="wcu-gradient-border">
+                <div class="wcu-content-box lg:min-h-68">
+                  <h3 class="wcu-box-title">
+                    Solutions Built Around Your Business
+                  </h3>
 
-          <!-- Wide -->
-          <div class="box flex-[1] bg-white border-2 border-blue-600 rounded-2xl 
-                flex items-center justify-center cursor-pointer
-                transition-all duration-[250ms]">
-            1
+                  <div class="wcu-box-paragh">
+                    <p>
+                      We take time to understand your goals, workflows, and constraints,
+                      ensuring every solution delivers measurable business impact—not
+                      just technical output.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Narrow -->
-          <div class="box flex-[0.8] bg-white border-2 border-blue-600 rounded-2xl 
-                flex items-center justify-center cursor-pointer
-                transition-all duration-[250ms]">
-            2
+          <!-- row1 box2 -->
+          <div class="wcu-container group lg:max-w-sm">
+            <div class="relative">
+              <!-- Glow -->
+              <div class="wcu-glowbox">
+              </div>
+              <!-- Gradient border -->
+              <div class="wcu-gradient-border">
+                <!-- Inner content -->
+                <div class="wcu-content-box lg:min-h-60">
+                  <h3 class="wcu-box-title">
+                    AI and Automation with Real-World Value
+                  </h3>
+                  <div class="wcu-box-paragh">
+                    <p">
+                      We apply AI and automation where it makes sense, focusing on efficiency, insight, and reliability
+                      rather than unnecessary complexity.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
 
-        <!-- Row 2 -->
-        <div class="row flex flex-1 gap-3 transition-all duration-[250ms]">
+        <div class="wcu-row items-start">
 
-          <!-- Narrow -->
-          <div class="box flex-[0.8] bg-white border-2 border-blue-600 rounded-2xl 
-                flex items-center justify-center cursor-pointer
-                transition-all duration-[250ms]">
-            3
+          <!-- row2 box1 -->
+          <div class="wcu-container group lg:max-w-md">
+            <div class="relative">
+              <!-- Glow -->
+              <div class="wcu-glowbox">
+              </div>
+              <!-- Gradient border -->
+              <div class="wcu-gradient-border">
+                <!-- Inner content -->
+                <div class="wcu-content-box lg:min-h-52">
+                  <h3 class="wcu-box-title">
+                    Designed to Fit Your Existing Ecosystem
+                  </h3>
+                  <div class="wcu-box-paragh">
+                    <p>
+                      Our solutions integrate seamlessly with your current systems, minimizing disruption while
+                      enabling modernization and scalability.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Wide -->
-          <div class="box flex-[1] bg-white border-2 border-blue-600 rounded-2xl 
-                flex items-center justify-center cursor-pointer
-                transition-all duration-[250ms]">
-            4
+          <!-- row2 box2 -->
+          <div class="wcu-container group lg:max-w-sm">
+            <div class="relative">
+              <!-- Glow -->
+              <div class="wcu-glowbox">
+              </div>
+              <!-- Gradient border -->
+              <div class="wcu-gradient-border">
+                <!-- Inner content -->
+                <div class="wcu-content-box lg:min-h-60">
+                  <h3 class="wcu-box-title">
+                    Clear Communication, Full Ownership
+                  </h3>
+                  <div class="wcu-box-paragh">
+                    <p>
+                      You work with a dedicated team that communicates clearly, takes responsibility, and delivers
+                      with transparency from start to finish.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
-
-
 
       </div>
     </div>
-
   </section>
 
 
   <script>
-    const boxes = document.querySelectorAll(".box");
-    const rows = document.querySelectorAll(".row");
-    const container = document.getElementById("bento");
+    const wcu_containers = document.querySelectorAll('.wcu-containers');
 
-    // Save default flex values
-    boxes.forEach(box => {
-      box.dataset.defaultFlex = getComputedStyle(box).flexGrow;
-    });
+    wcu_containers.forEach(item => {
+      const contentBox = item.querySelector('.wcu-content-box');
+      const paragraphBox = item.querySelector('.wcu-box-paragh');
 
-    rows.forEach(row => {
-      row.dataset.defaultFlex = getComputedStyle(row).flexGrow;
-    });
+      ["mouseenter", "click"].forEach(event => {
+        contentBox.addEventListener
 
-    function activateBox(targetBox) {
+      })
 
-      const activeRow = targetBox.parentElement;
-      const otherRow = [...rows].find(r => r !== activeRow);
 
-      // Expand active row
-      rows.forEach(row => {
-        row.style.flex = row === activeRow ? "2" : "0.8";
-      });
-
-      // Expand active box + shrink sibling
-      [...activeRow.children].forEach(box => {
-        box.style.flex = box === targetBox ? "2" : "0.8";
-      });
-    }
-
-    function resetLayout() {
-      rows.forEach(row => {
-        row.style.flex = row.dataset.defaultFlex;
-      });
-
-      boxes.forEach(box => {
-        box.style.flex = box.dataset.defaultFlex;
-      });
-    }
-
-    boxes.forEach(box => {
-      box.addEventListener("mouseenter", () => activateBox(box));
-      box.addEventListener("click", () => activateBox(box));
-    });
-
-    container.addEventListener("mouseleave", resetLayout);
+    })
   </script>
 
 

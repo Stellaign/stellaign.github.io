@@ -59,7 +59,7 @@
     --color-brand-secondary-23: #332700;
     --color-brand-secondary-24: #1f1700;
     --color-brand-secondary-25: #0a0800;
-    
+
     --color-title-col: #202245;
     --color-subtitle-col: #6A7282;
     --color-heroButton-col: #4A5CD3;
@@ -125,16 +125,33 @@
 }
 
 /* Why choose us section */
-.wcu-box {
-    @apply flex flex-col justify-center border-2 rounded-3xl p-7;
+.wcu-row {
+    @apply flex flex-col md:flex-row gap-5 mt-5 mx-auto;
+}
+
+.wcu-container {
+    @apply max-lg:max-w-lg max-lg:mx-auto;
+}
+
+.wcu-glowbox {
+    @apply absolute inset-0 rounded-3xl bg-gradient-to-r from-[#5DD7ED] to-[#303FA4] blur-sm opacity-30;
+}
+
+.wcu-gradient-border {
+    @apply relative rounded-3xl bg-gradient-to-r from-[#5DD7ED] to-[#303FA4] p-[2px];
+}
+
+.wcu-content-box {
+    @apply relative rounded-[1.4rem] flex flex-col justify-center bg-white hover:bg-[edf4f8] p-7 lg:p-5 max-lg:min-h-48 transition-all duration-300 group-hover:shadow-lg;
 }
 
 .wcu-box-title {
-    @apply text-2xl font-semibold text-slate-800 leading-tight;
+    @apply font-primary text-2xl font-semibold leading-tight text-title-col;
 }
 
 .wcu-box-paragh {
-    @apply hidden mt-4 text-sm sm:text-base text-slate-600 max-w-md;
+    @apply max-h-0 group-hover:max-h-[500px] overflow-y-hidden transition-all duration-300 font-secondary sm:mt-4 text-sm leading-snug text-slate-500;
 }
+
 
 /* cta section */
