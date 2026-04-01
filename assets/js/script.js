@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
     });
 
-    changeAnc?.classList.remove("md:hover:text-brand-primary");
-    changeAnc?.classList.add("md:text-brand-primary");
+
+    changeAnc?.classList.add("md:font-semibold");
 
 
 
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         servicesMenu?.classList.toggle("hidden");
     });
 
-    // Close dropdown if clicking outside (safely handle missing contactModal)
+    // Close dropdown if clicking outside
     document.addEventListener("click", (e) => {
         const clickedInsideModal = contactModal && contactModal.contains(e.target);
         if (!servicesMenu?.contains(e.target) && !servicesBtn?.contains(e.target) && !clickedInsideModal) {
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // fallback: if Flowbite not wired up or no hide trigger, use basic hide (keeps aria consistent)
+        // fallback: if Flowbite not wired up or no hide trigger, use basic hide
         modalEl.classList.add("hidden");
         modalEl.setAttribute("aria-hidden", "true");
     }
@@ -161,4 +161,16 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+
+
+    // --- 2. Back to Top Button ---
+    const backToTopBtn = document.getElementById("backToTop");
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 1, left: 0, behavior: 'smooth' });
+        });
+    }
+
+
+
 });

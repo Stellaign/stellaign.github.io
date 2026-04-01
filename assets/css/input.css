@@ -60,9 +60,13 @@
     --color-brand-secondary-24: #1f1700;
     --color-brand-secondary-25: #0a0800;
 
+    --color-about-us-bg-col: #ecf0ff;
     --color-title-col: #202245;
     --color-subtitle-col: #6A7282;
-    --color-heroButton-col: #4A5CD3;
+    --color-button-primary-col: #4A5CD3;
+
+    --color-brand-primary-light: #4457C8;
+
     /* socials */
     --color-face-primary: #0866ff;
     --color-tube-primary: #ff0033;
@@ -70,13 +74,75 @@
     --color-x-primary: #010b13;
 }
 
-.section-titles {
-    @apply font-primary text-title-col text-2xl md:text-4xl font-bold md:font-semibold my-6 leading-tight;
+body {
+    @apply font-primary selection:bg-brand-primary selection:text-brand-secondary min-w-[320px];
 }
 
-.micro-lines {
-    @apply font-secondary font-light text-subtitle-col md:text-lg lg:text-xl;
+.section-container {
+    @apply max-w-screen-xl mx-auto;
 }
+
+.section-title {
+    @apply font-primary text-title-col text-2xl sm:text-4xl font-bold sm:font-semibold my-6 leading-tight;
+}
+
+.micro-line {
+    @apply font-secondary font-light text-subtitle-col text-base sm:text-lg lg:text-xl;
+}
+
+
+
+/* **********NavBar********** */
+.nav-links {
+    @apply py-2 px-3 text-brand-primary rounded-sm hover:bg-brand-primary-1 md:hover:bg-transparent md:hover:font-semibold md:p-0 transition-all duration-100;
+}
+
+.nav-swp-menu-btn {
+    @apply block w-full p-3 rounded-lg hover:bg-brand-primary-2;
+}
+
+.nav-swp-menu-name {
+    @apply font-semibold text-left;
+}
+
+.nav-swp-menu-microlines {
+    @apply block text-sm text-left text-gray-500;
+}
+
+.nav-swp-menu-data {
+    @apply justify-between h-full;
+}
+
+.nav-swp-menu-data-head {
+    @apply font-primary text-2xl font-medium text-slate-900;
+}
+
+.nav-swp-menu-data-par {
+    @apply font-primary text-base text-slate-800;
+}
+
+.nav-swp-menu-button {
+    @apply block bg-button-primary-col hover:bg-brand-primary transition-colors duration-250 font-secondary text-white rounded-3xl text-sm px-5 py-2.5 text-center;
+}
+
+
+
+/* **********Contact Us Modal********** */
+
+.modal-form-label {
+    @apply block mb-2 text-sm font-medium text-gray-900;
+}
+
+.modal-form-input {
+    @apply bg-brand-primary-2 border border-brand-primary-4 text-gray-900 text-sm rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none block w-full p-2;
+}
+
+.modal-form-sub-button {
+    @apply text-slate-50 bg-button-primary-col hover:bg-brand-primary font-secondary font-semibold rounded-3xl text-sm px-5 py-2.5 text-center;
+}
+
+
+/* *************Homepage********** */
 
 /* Trust section */
 
@@ -92,11 +158,37 @@
     @apply rounded-[1.4rem] bg-white p-5 not-group-hover:max-md:h-[12rem] not-group-hover:max-lg:h-[13rem] not-group-hover:max-md:flex not-group-hover:max-md:flex-col not-group-hover:max-md:justify-around transition-all duration-200 group-hover:bg-blue-50 group-hover:shadow-lg;
 }
 
+
 /* Our Expertise section */
 
-.expertise-heading {
-    @apply text-2xl md:text-3xl font-semibold;
+.service-bg {
+    @apply absolute inset-0 bg-gradient-to-r from-[#303FA5] via-[#303e8f] to-[#303FA5] transition-opacity duration-250 pointer-events-none z-0;
 }
+
+.service-header {
+    @apply relative z-10 grid grid-cols-[15%_65%_20%] gap-2 px-3 md:px-15 py-10 sm:max-w-screen overflow-clip transition-all duration-250;
+}
+
+.service-name {
+    @apply text-xl sm:text-3xl lg:text-3xl font-semibold transition-all duration-200;
+}
+
+.service-content {
+    @apply overflow-hidden transition-all duration-250;
+}
+
+.service-content-parag {
+    @apply text-base sm:text-lg text-center xs:text-left pt-6;
+}
+
+.service-content-microline {
+    @apply text-sm text-center xs:text-left text-brand-secondary pt-6;
+}
+
+.arrow {
+    @apply h-9 w-9 sm:h-12 sm:w-12 transition-all duration-200;
+}
+
 
 /* How we operate section */
 
@@ -117,14 +209,16 @@
 }
 
 .hwo-box-content-heading {
-    @apply font-primary text-xl md:text-xl font-semibold text-brand-primary;
+    @apply font-primary text-lg sm:text-xl font-semibold text-brand-primary;
 }
 
 .hwo-box-content-paragh {
     @apply font-secondary max-md:font-light text-subtitle-col text-sm sm:text-base mt-2;
 }
 
+
 /* Why choose us section */
+
 .wcu-row {
     @apply flex flex-col md:flex-row gap-5 mt-5 mx-auto;
 }
@@ -142,16 +236,96 @@
 }
 
 .wcu-content-box {
-    @apply relative rounded-[1.4rem] flex flex-col justify-center bg-white hover:bg-[edf4f8] p-7 lg:p-5 max-lg:min-h-48 transition-all duration-300 group-hover:shadow-lg;
+    @apply relative rounded-[1.4rem] flex flex-col justify-center bg-white hover:bg-[edf4f8] p-7 max-md:text-center max-md:min-h-44 max-lg:min-h-50 transition-all duration-250 group-hover:shadow-lg;
 }
 
 .wcu-box-title {
-    @apply font-primary text-2xl font-semibold leading-tight text-title-col;
+    @apply font-primary text-xl sm:text-2xl font-semibold leading-tight text-title-col;
 }
 
 .wcu-box-paragh {
-    @apply max-h-0 group-hover:max-h-[500px] overflow-y-hidden transition-all duration-300 font-secondary sm:mt-4 text-sm leading-snug text-slate-500;
+    @apply max-h-[700px] font-secondary mt-4 text-sm leading-snug text-slate-500;
 }
 
 
-/* cta section */
+/* Footer  */
+.footer-heading {
+    @apply font-primary text-brand-primary max-sm:mb-3 mb-4 text-lg font-bold;
+}
+
+.footer-links {
+    @apply font-secondary text-sm font-normal;
+}
+
+
+/* ********** Contact Us Page ********** */
+
+.cup-main-container {
+    @apply grid lg:grid-cols-2 rounded-2xl items-start gap-5 max-lg:mb-6 md:mx-auto max-lg:mx-5 max-w-[950px] max-lg:max-w-2xl bg-gray-100 border border-gray-200 shadow-lg;
+}
+
+.cup-details-container {
+    @apply relative flex flex-col justify-center p-7 lg:p-11 lg:h-full lg:rounded-l-2xl max-lg:rounded-t-2xl bg-brand-primary selection:!bg-brand-secondary selection:!text-brand-primary;
+}
+
+.cup-details-container-bg {
+    @apply absolute inset-0 bg-no-repeat bg-center lg:bg-[70%_center] bg-cover opacity-10 pointer-events-none;
+}
+
+.cup-title-primary {
+    @apply pb-3 text-gray-50 text-3xl font-bold;
+}
+
+.cup-title-secondary {
+    @apply text-[#ffc407] text-xl font-semibold;
+}
+
+.cup-parag {
+    @apply text-base text-gray-100 mt-2 lg:mt-4 leading-relaxed;
+}
+
+.cup-content-icon {
+    @apply bg-gray-100 h-10 w-10 rounded-full flex items-center justify-center shrink-0;
+}
+
+.cup-content-label {
+    @apply block text-gray-50;
+}
+
+.cup-content-data {
+    @apply font-secondary font-semibold text-brand-secondary;
+}
+
+.cup-form-label {
+    @apply block text-base p-1 px-4 font-medium text-gray-800 mb-1;
+}
+
+.cup-form-input {
+    @apply w-full rounded-lg py-2 px-4 shadow-md hover:shadow-lg bg-slate-100 text-slate-900 text-base border border-gray-200 focus:border-brand-primary focus:border-2 outline-none focus:bg-transparent transition-all duration-200;
+}
+
+
+/* ********** About Us Page ********** */
+
+.au-paragh {
+    @apply font-secondary font-normal text-base text-subtitle-col text-justify lg:text-left mb-3;
+}
+
+.au-paragh-diff {
+    @apply font-secondary font-semibold text-base text-brand-primary text-justify lg:text-left mb-3;
+}
+
+.au-hero-title {
+    @apply font-primary text-2xl md:text-4xl lg:text-5xl text-center text-title-col font-bold tracking-normal leading-tight px-5 md:px-15 lg:px-0 mb-9 mx-auto;
+}
+
+
+.au-hero-parag-container {
+    @apply max-md:p-5 lg:p-5 max-md:border-2 lg:border-2 border-brand-primary-light rounded-4xl max-md:mb-5 mb-7 md:mr-10 lg:mr-0;
+}
+
+.au-hero-parag {
+    @apply font-secondary font-semibold tracking-wider leading-tight text-sm max-md:text-justify lg:text-justify text-brand-primary-light;
+}
+
+

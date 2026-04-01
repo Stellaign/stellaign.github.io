@@ -257,7 +257,7 @@
   <!-- Contact Us modal -->
   <div id="contactUsModal" tabindex="-1" aria-hidden="true"
     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full">
-    <div class="relative w-full max-w-2xl max-h-[calc(100dvh-3.5rem)] overflow-y-auto p-4">
+    <div class="relative w-full max-w-2xl overflow-y-auto p-4">
       <!-- Modal content -->
       <div class="relative p-4 bg-brand-primary-1 rounded-lg shadow sm:p-5">
         <!-- Modal header -->
@@ -281,42 +281,53 @@
         <form action="" method="get">
           <div class="flex flex-col gap-4 mb-4">
             <div>
-              <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Name <span
+              <label for="name" class="modal-form-label">Name <span
                   class="text-red-700">*</span></label>
               <input type="text" name="name" id="name"
-                class="bg-brand-primary-2 border border-brand-primary-4 text-gray-900 text-sm rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none block w-full p-2.5"
-                placeholder="John Doe" required>
+                class="modal-form-input"
+                placeholder="John Doe" required />
             </div>
             <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email <span
+              <label for="email" class="modal-form-label">Email <span
                   class="text-red-700">*</span></label>
               <input type="email" name="email" id="email"
-                class="bg-brand-primary-2 border border-brand-primary-4 text-gray-900 text-sm rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none block w-full p-2.5"
-                placeholder="john.doe@stellaign.com" required>
+                class="modal-form-input"
+                placeholder="john.doe@stellaign.com" required />
             </div>
             <div>
-              <label for="category" class="block mb-2 text-sm font-medium text-gray-900">Category </label>
+              <label for="contactNum" class="modal-form-label">Contact Number (With Country Code)</label>
+              <input type="contactNum" name="contactNum" id="contactNum"
+                class="modal-form-input"
+                placeholder="+91 9078780079" />
+            </div>
+            <div>
+              <label for="category" class="modal-form-label">Category
+              </label>
               <select id="category"
-                class="bg-brand-primary-2 border border-brand-primary-4 text-gray-900 text-sm rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none block w-full p-2.5"
+                class="modal-form-input"
                 required>
                 <option selected value="default">Select a Category...</option>
-                <option value="AIInt-DA">AI Integration and Data Analytics</option>
+                <option value="AIInt-DA">
+                  AI Integration and Data Analytics
+                </option>
                 <option value="AppDev">Application Development</option>
-                <option value="IOTDev-Int">IOT Development and Integration</option>
+                <option value="IOTDev-Int">
+                  IOT Development and Integration
+                </option>
                 <option value="AppMod">Application Modernization</option>
                 <option value="BusiAuto">Business Automations</option>
               </select>
             </div>
             <div class="sm:col-span-2">
-              <label for="description" class="block mb-2 text-sm font-medium text-gray-900">Description</label>
+              <label for="description" class="modal-form-label">Description</label>
               <textarea id="description"
-                class="block p-2.5 w-full h-32 resize-none text-sm text-gray-900 bg-brand-primary-2 rounded-lg border border-brand-primary-4 shadow-sm hover:shadow-md transition-shadow duration-200 focus:border-brand-primary focus:border-2 outline-none"
+                class="modal-form-input h-32 resize-none"
                 placeholder="Write a description..."></textarea>
             </div>
           </div>
           <div class="flex justify-center">
             <button type="submit"
-              class="text-slate-50 bg-brand-primary hover:bg-brand-primary-18 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+              class="modal-form-sub-button">
               Connect
             </button>
           </div>
